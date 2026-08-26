@@ -75,6 +75,9 @@ MLB_LINEUPS = {
 
 BATS = {}  # filled deterministically below
 
+#: Reverse lookup so the results generator can tell pitchers from hitters.
+MLB_PITCHERS_BY_NAME = {name for name, _ in MLB_PITCHERS.values()}
+
 NFL_GAMES = [("KC", "BUF"), ("PHI", "DAL"), ("SF", "SEA"), ("DET", "GB"),
              ("BAL", "CIN"), ("MIA", "NYJ"), ("HOU", "IND"), ("LAR", "TB")]
 
@@ -350,6 +353,79 @@ def build_cfbd() -> dict[str, str]:
 
 
 # ------------------------------------------------------------- market & weather
+def build_results(mlb_ids: dict, nfl_ids: dict, cfb_ids: dict) -> None:
+    """Actual outcomes for the recorded slate, so auto-grading is testable offline.
+
+    Outcomes are drawn around plausible values rather than around what the model
+    projected -- grading against the model's own guess would make the track record look
+    perfect and prove nothing.
+
+    NFL results are not generated here: grading reuses the same weekly rows the
+    projection model reads, so `weekly_default.json` already serves both purposes.
+    """
+    hitting, pitching = [], []
+    for name, pid in mlb_ids.items():
+        if name in MLB_PITCHERS_BY_NAME:
+            pitching.append({
+                "player": {"id": int(pid), "fullName": name},
+                "stat": {"strikeOuts": max(0, int(RNG.gauss(5.4, 2.4))),
+                         "hits": max(0, int(RNG.gauss(5.5, 2.5))),
+                         "inningsPitched": str(round(RNG.uniform(3.0, 7.0), 1))},
+            })
+        else:
+            hitting.append({
+                "player": {"id": int(pid), "fullName": name},
+                "stat": {"hits": RNG.choices([0, 1, 2, 3, 4], [30, 38, 22, 8, 2])[0],
+                         "plateAppearances": RNG.randint(3, 5),
+                         "strikeOuts": RNG.randint(0, 3)},
+            })
+    _write("mlb_statsapi", "results_hitting_default", {"stats": [{"splits": hitting}]})
+    _write("mlb_statsapi", "results_pitching_default", {"stats": [{"splits": pitching}]})
+
+    # CFBD's per-game player stats: games -> teams -> categories -> types -> athletes.
+    games = []
+    for home, away in CFB_GAMES:
+        teams_block = []
+        for team in (home, away):
+            receiving, rushing, passing = [], [], []
+            for name, position in _with_depth(CFB_ROSTERS, CFB_DEPTH)[team]:
+                pid = cfb_ids.get(name)
+                if pid is None:
+                    continue
+                if position == "QB":
+                    passing.append((pid, RNG.gauss(255, 70)))
+                elif position == "RB":
+                    rushing.append((pid, RNG.gauss(85, 40)))
+                else:
+                    receiving.append((pid, RNG.gauss(62, 35)))
+
+            def block(name: str, pairs: list, stat_type: str) -> dict:
+                return {"name": name, "types": [{
+                    "name": stat_type,
+                    "athletes": [{"id": pid, "stat": str(max(0, round(value)))}
+                                 for pid, value in pairs],
+                }]}
+
+            categories = []
+            if receiving:
+                categories.append({"name": "receiving", "types": [
+                    {"name": "YDS", "athletes": [{"id": p, "stat": str(max(0, round(v)))} for p, v in receiving]},
+                    {"name": "REC", "athletes": [{"id": p, "stat": str(RNG.randint(1, 9))} for p, _ in receiving]},
+                    {"name": "TD", "athletes": [{"id": p, "stat": str(RNG.choices([0, 1, 2], [65, 30, 5])[0])} for p, _ in receiving]},
+                ]})
+            if rushing:
+                categories.append({"name": "rushing", "types": [
+                    {"name": "YDS", "athletes": [{"id": p, "stat": str(max(0, round(v)))} for p, v in rushing]},
+                    {"name": "TD", "athletes": [{"id": p, "stat": str(RNG.choices([0, 1, 2], [55, 35, 10])[0])} for p, _ in rushing]},
+                ]})
+            if passing:
+                categories.append(block("passing", passing, "YDS"))
+            teams_block.append({"school": team, "categories": categories})
+        games.append({"id": 5000 + len(games), "teams": teams_block})
+
+    _write("cfbd", "results_default", games)
+
+
 def build_market() -> None:
     """ESPN scoreboard shape, carrying the spread/total the models key off."""
     def event(index: int, home: str, away: str, spread: float, total: float) -> dict:
@@ -461,7 +537,10 @@ def build_underdog(mlb_ids: dict, nfl_ids: dict, cfb_ids: dict) -> None:
                ("rush_rec_tds", (0.5, 0.5))],
     }
     for i, (home, away) in enumerate(NFL_GAMES):
-        game_id = add_game("nfl", i, home, away, "2025-11-16T18:00:00Z")
+        # Sunday of week 9, which is the last week `weekly_default.json` covers. The
+        # grading path infers the week from this date, so a mismatch here would leave
+        # the offline NFL slate permanently ungradable.
+        game_id = add_game("nfl", i, home, away, "2025-11-02T18:00:00Z")
         for team in (home, away):
             for name, position in NFL_ROSTERS[team]:
                 for stat_key, (low, high) in market_by_position[position]:
@@ -578,6 +657,7 @@ def main() -> None:
     cfb_ids = build_cfbd()
     build_market()
     build_weather()
+    build_results(mlb_ids, nfl_ids, cfb_ids)
     build_underdog(mlb_ids, nfl_ids, cfb_ids)
 
     total = sum(1 for _ in FIXTURE_DIR.rglob("*.json"))

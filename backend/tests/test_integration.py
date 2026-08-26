@@ -171,14 +171,19 @@ class TestSettings:
 
 
 class TestTrackRecord:
-    def test_publishing_a_board_records_it_for_grading(self, client):
+    def test_recording_a_slate_is_what_publishes_it_for_grading(self, client):
+        """Reading a board is not publishing it -- recording is an explicit act."""
+        before = client.get("/api/track-record").json()["total_picks"]
         client.get("/api/board/MLB")
-        assert client.get("/api/track-record").json()["total_picks"] > 0
+        assert client.get("/api/track-record").json()["total_picks"] == before
+
+        client.post("/api/board/MLB/snapshot")
+        assert client.get("/api/track-record").json()["total_picks"] > before
 
     def test_grading_settles_picks_and_scores_them(self, client):
         from app.db import session_scope
 
-        client.get("/api/board/MLB")
+        client.post("/api/board/MLB/snapshot")
         with session_scope() as session:
             pending = (
                 session.query(ProjectionRow)

@@ -42,17 +42,19 @@ def get_board(
     min_confidence: float | None = None,
     min_probability: float | None = None,
     limit: int = Query(300, ge=1, le=1000),
-    persist: bool = True,
     session: Session = Depends(get_session),
 ) -> BoardResponse:
-    """Build, filter and return one league's board."""
+    """Build, filter and return one league's board.
+
+    This is a read. It deliberately does **not** record anything: every filter change
+    and tab switch calls it, and recording here meant a single pick was written to the
+    track record dozens of times a day and counted dozens of times in the hit rate, ROI
+    and Brier score. Recording is an explicit act -- see the snapshot endpoint below.
+    """
     settings = load_settings(session)
     builder = BoardBuilder(session, settings, build_calibrator(session))
     board = builder.build(league, mode)
     session.commit()
-
-    if persist and board.bets:
-        _persist_snapshot(session, board)
 
     board.bets = _filter(
         board.bets,
@@ -100,11 +102,46 @@ def import_board(
     return board
 
 
-def _persist_snapshot(session: Session, board: BoardResponse) -> None:
-    """Record what we published, so the Track Record can grade it later.
+@router.post("/board/{league}/snapshot")
+def record_slate(
+    league: League,
+    mode: str = Query("value", pattern="^(value|likely)$"),
+    session: Session = Depends(get_session),
+) -> dict:
+    """Record the current slate for later grading.
 
-    Written once per refresh and never updated: the point of the track record is that
-    it shows what we actually said at the time, not a retroactively improved version.
+    Safe to call repeatedly -- and worth calling repeatedly, since that is how closing
+    line value is captured. The first recording of a pick stores the projection as
+    published and is never rewritten; later recordings only update the line, so the
+    track record always reflects what we actually said at the time.
+    """
+    settings = load_settings(session)
+    builder = BoardBuilder(session, settings, build_calibrator(session))
+    board = builder.build(league, mode)
+    session.commit()
+
+    if not board.bets:
+        return {
+            "recorded": 0, "updated": 0, "league": league.value,
+            "notes": board.notes or ["No bets available to record."],
+        }
+
+    recorded, updated = _persist_snapshot(session, board)
+    return {
+        "recorded": recorded,
+        "updated": updated,
+        "league": league.value,
+        "source": board.source,
+        "notes": board.notes,
+    }
+
+
+def _persist_snapshot(session: Session, board: BoardResponse) -> tuple[int, int]:
+    """Upsert the board's picks. Returns (newly recorded, line-updated).
+
+    Keyed on (underdog_line_id, side, event_date). A pick already on file keeps its
+    original projection -- the point of a track record is what we said *then*, not a
+    retroactively improved version -- and only has its closing line refreshed.
     """
     snapshot = Snapshot(
         league=board.league.value,
@@ -115,7 +152,26 @@ def _persist_snapshot(session: Session, board: BoardResponse) -> None:
     session.add(snapshot)
     session.flush()
 
+    recorded = updated = 0
     for bet in board.bets:
+        event_date = bet.starts_at.date().isoformat() if bet.starts_at else None
+        existing = (
+            session.query(ProjectionRow)
+            .filter_by(
+                underdog_line_id=bet.underdog_line_id,
+                side=bet.side.value,
+                event_date=event_date,
+            )
+            .one_or_none()
+        )
+        if existing is not None:
+            # Already on file. Only the line moves; the projection is history.
+            if existing.graded_at is None:
+                existing.closing_line = bet.stat_line
+                updated += 1
+            continue
+
+        recorded += 1
         session.add(
             ProjectionRow(
                 snapshot_id=snapshot.id,
@@ -127,7 +183,7 @@ def _persist_snapshot(session: Session, board: BoardResponse) -> None:
                 team=bet.team,
                 opponent=bet.opponent,
                 game_id=bet.game_id,
-                event_date=bet.starts_at.date().isoformat() if bet.starts_at else None,
+                event_date=event_date,
                 starts_at=bet.starts_at.replace(tzinfo=None) if bet.starts_at else None,
                 stat_line=bet.stat_line,
                 side=bet.side.value,
@@ -140,9 +196,13 @@ def _persist_snapshot(session: Session, board: BoardResponse) -> None:
                 ev_per_dollar=bet.ev_per_dollar,
                 confidence=bet.confidence,
                 factors_json=dumps([f.model_dump() for f in bet.factors]),
+                closing_line=bet.stat_line,
             )
         )
+
+    snapshot.line_count = recorded
     session.commit()
+    return recorded, updated
 
 
 def _filter(bets, **criteria):

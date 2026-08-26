@@ -1178,7 +1178,7 @@
   },
   {
    "id": "line-43",
-   "stat_value": "9.5",
+   "stat_value": "8.5",
    "status": "active",
    "options": [
     {
@@ -1570,7 +1570,7 @@
   },
   {
    "id": "line-57",
-   "stat_value": "5.5",
+   "stat_value": "6.5",
    "status": "active",
    "options": [
     {
@@ -1766,7 +1766,7 @@
   },
   {
    "id": "line-64",
-   "stat_value": "6.5",
+   "stat_value": "5.5",
    "status": "active",
    "options": [
     {
@@ -2354,7 +2354,7 @@
   },
   {
    "id": "line-85",
-   "stat_value": "187.5",
+   "stat_value": "199.5",
    "status": "active",
    "options": [
     {
@@ -2466,7 +2466,7 @@
   },
   {
    "id": "line-90",
-   "stat_value": "74.5",
+   "stat_value": "77.5",
    "status": "active",
    "options": [
     {
@@ -2494,7 +2494,7 @@
   },
   {
    "id": "line-91",
-   "stat_value": "0.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
@@ -2550,7 +2550,7 @@
   },
   {
    "id": "line-93",
-   "stat_value": "16.5",
+   "stat_value": "19.5",
    "status": "active",
    "options": [
     {
@@ -2578,7 +2578,7 @@
   },
   {
    "id": "line-94",
-   "stat_value": "1.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -2606,7 +2606,7 @@
   },
   {
    "id": "line-96",
-   "stat_value": "19.5",
+   "stat_value": "20.5",
    "status": "active",
    "options": [
     {
@@ -2690,7 +2690,7 @@
   },
   {
    "id": "line-99",
-   "stat_value": "17.5",
+   "stat_value": "19.5",
    "status": "active",
    "options": [
     {
@@ -2718,7 +2718,7 @@
   },
   {
    "id": "line-100",
-   "stat_value": "2.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
@@ -2752,7 +2752,7 @@
     {
      "id": "opt-203",
      "choice": "higher",
-     "payout_multiplier": "1.0",
+     "payout_multiplier": "1.25",
      "choice_display": "Higher"
     },
     {
@@ -2774,7 +2774,7 @@
   },
   {
    "id": "line-103",
-   "stat_value": "1.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -2830,7 +2830,7 @@
   },
   {
    "id": "line-105",
-   "stat_value": "22.5",
+   "stat_value": "21.5",
    "status": "active",
    "options": [
     {
@@ -2858,7 +2858,7 @@
   },
   {
    "id": "line-106",
-   "stat_value": "1.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -2914,7 +2914,7 @@
   },
   {
    "id": "line-108",
-   "stat_value": "259.5",
+   "stat_value": "293.5",
    "status": "active",
    "options": [
     {
@@ -3032,7 +3032,7 @@
     {
      "id": "opt-223",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -3054,7 +3054,7 @@
   },
   {
    "id": "line-113",
-   "stat_value": "33.5",
+   "stat_value": "32.5",
    "status": "active",
    "options": [
     {
@@ -3082,7 +3082,7 @@
   },
   {
    "id": "line-114",
-   "stat_value": "3.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -3278,7 +3278,7 @@
   },
   {
    "id": "line-122",
-   "stat_value": "187.5",
+   "stat_value": "212.5",
    "status": "active",
    "options": [
     {
@@ -3306,7 +3306,7 @@
   },
   {
    "id": "line-124",
-   "stat_value": "83.5",
+   "stat_value": "80.5",
    "status": "active",
    "options": [
     {
@@ -3390,7 +3390,7 @@
   },
   {
    "id": "line-127",
-   "stat_value": "26.5",
+   "stat_value": "29.5",
    "status": "active",
    "options": [
     {
@@ -3446,7 +3446,7 @@
   },
   {
    "id": "line-130",
-   "stat_value": "25.5",
+   "stat_value": "23.5",
    "status": "active",
    "options": [
     {
@@ -3474,7 +3474,7 @@
   },
   {
    "id": "line-131",
-   "stat_value": "2.5",
+   "stat_value": "3.5",
    "status": "active",
    "options": [
     {
@@ -3530,7 +3530,7 @@
   },
   {
    "id": "line-133",
-   "stat_value": "21.5",
+   "stat_value": "22.5",
    "status": "active",
    "options": [
     {
@@ -3586,7 +3586,7 @@
   },
   {
    "id": "line-136",
-   "stat_value": "175.5",
+   "stat_value": "189.5",
    "status": "active",
    "options": [
     {
@@ -3642,7 +3642,7 @@
   },
   {
    "id": "line-138",
-   "stat_value": "114.5",
+   "stat_value": "103.5",
    "status": "active",
    "options": [
     {
@@ -3726,7 +3726,7 @@
   },
   {
    "id": "line-141",
-   "stat_value": "20.5",
+   "stat_value": "22.5",
    "status": "active",
    "options": [
     {
@@ -3754,7 +3754,7 @@
   },
   {
    "id": "line-142",
-   "stat_value": "1.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -3782,7 +3782,7 @@
   },
   {
    "id": "line-144",
-   "stat_value": "21.5",
+   "stat_value": "18.5",
    "status": "active",
    "options": [
     {
@@ -3810,13 +3810,13 @@
   },
   {
    "id": "line-145",
-   "stat_value": "1.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
      "id": "opt-289",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -3838,7 +3838,7 @@
   },
   {
    "id": "line-147",
-   "stat_value": "19.5",
+   "stat_value": "18.5",
    "status": "active",
    "options": [
     {
@@ -3894,7 +3894,7 @@
   },
   {
    "id": "line-150",
-   "stat_value": "230.5",
+   "stat_value": "211.5",
    "status": "active",
    "options": [
     {
@@ -3922,7 +3922,7 @@
   },
   {
    "id": "line-152",
-   "stat_value": "69.5",
+   "stat_value": "76.5",
    "status": "active",
    "options": [
     {
@@ -4034,7 +4034,7 @@
   },
   {
    "id": "line-156",
-   "stat_value": "1.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -4124,7 +4124,7 @@
     {
      "id": "opt-317",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -4230,7 +4230,7 @@
   },
   {
    "id": "line-164",
-   "stat_value": "142.5",
+   "stat_value": "150.5",
    "status": "active",
    "options": [
     {
@@ -4314,7 +4314,7 @@
   },
   {
    "id": "line-169",
-   "stat_value": "25.5",
+   "stat_value": "22.5",
    "status": "active",
    "options": [
     {
@@ -4342,7 +4342,7 @@
   },
   {
    "id": "line-170",
-   "stat_value": "1.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -4426,7 +4426,7 @@
   },
   {
    "id": "line-175",
-   "stat_value": "24.5",
+   "stat_value": "28.5",
    "status": "active",
    "options": [
     {
@@ -4510,7 +4510,7 @@
   },
   {
    "id": "line-178",
-   "stat_value": "200.5",
+   "stat_value": "173.5",
    "status": "active",
    "options": [
     {
@@ -4538,7 +4538,7 @@
   },
   {
    "id": "line-180",
-   "stat_value": "89.5",
+   "stat_value": "87.5",
    "status": "active",
    "options": [
     {
@@ -4622,7 +4622,7 @@
   },
   {
    "id": "line-183",
-   "stat_value": "24.5",
+   "stat_value": "23.5",
    "status": "active",
    "options": [
     {
@@ -4650,13 +4650,13 @@
   },
   {
    "id": "line-184",
-   "stat_value": "2.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
      "id": "opt-367",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -4684,7 +4684,7 @@
     {
      "id": "opt-369",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -4706,7 +4706,7 @@
   },
   {
    "id": "line-186",
-   "stat_value": "18.5",
+   "stat_value": "19.5",
    "status": "active",
    "options": [
     {
@@ -4818,7 +4818,7 @@
   },
   {
    "id": "line-192",
-   "stat_value": "202.5",
+   "stat_value": "222.5",
    "status": "active",
    "options": [
     {
@@ -4964,7 +4964,7 @@
     {
      "id": "opt-393",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -5020,7 +5020,7 @@
     {
      "id": "opt-397",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -5042,7 +5042,7 @@
   },
   {
    "id": "line-200",
-   "stat_value": "25.5",
+   "stat_value": "26.5",
    "status": "active",
    "options": [
     {
@@ -5076,7 +5076,7 @@
     {
      "id": "opt-401",
      "choice": "higher",
-     "payout_multiplier": "1.0",
+     "payout_multiplier": "1.25",
      "choice_display": "Higher"
     },
     {
@@ -5104,7 +5104,7 @@
     {
      "id": "opt-403",
      "choice": "higher",
-     "payout_multiplier": "1.0",
+     "payout_multiplier": "1.25",
      "choice_display": "Higher"
     },
     {
@@ -5126,7 +5126,7 @@
   },
   {
    "id": "line-203",
-   "stat_value": "32.5",
+   "stat_value": "34.5",
    "status": "active",
    "options": [
     {
@@ -5210,7 +5210,7 @@
   },
   {
    "id": "line-206",
-   "stat_value": "200.5",
+   "stat_value": "220.5",
    "status": "active",
    "options": [
     {
@@ -5266,7 +5266,7 @@
   },
   {
    "id": "line-209",
-   "stat_value": "1.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -5322,7 +5322,7 @@
   },
   {
    "id": "line-211",
-   "stat_value": "27.5",
+   "stat_value": "26.5",
    "status": "active",
    "options": [
     {
@@ -5350,13 +5350,13 @@
   },
   {
    "id": "line-212",
-   "stat_value": "2.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
      "id": "opt-423",
      "choice": "higher",
-     "payout_multiplier": "1.0",
+     "payout_multiplier": "1.25",
      "choice_display": "Higher"
     },
     {
@@ -5378,7 +5378,7 @@
   },
   {
    "id": "line-214",
-   "stat_value": "41.5",
+   "stat_value": "43.5",
    "status": "active",
    "options": [
     {
@@ -5434,7 +5434,7 @@
   },
   {
    "id": "line-217",
-   "stat_value": "20.5",
+   "stat_value": "24.5",
    "status": "active",
    "options": [
     {
@@ -5462,7 +5462,7 @@
   },
   {
    "id": "line-218",
-   "stat_value": "1.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -5490,7 +5490,7 @@
   },
   {
    "id": "line-220",
-   "stat_value": "268.5",
+   "stat_value": "260.5",
    "status": "active",
    "options": [
     {
@@ -5574,7 +5574,7 @@
   },
   {
    "id": "line-223",
-   "stat_value": "1.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -5630,7 +5630,7 @@
   },
   {
    "id": "line-225",
-   "stat_value": "40.5",
+   "stat_value": "41.5",
    "status": "active",
    "options": [
     {
@@ -5664,7 +5664,7 @@
     {
      "id": "opt-451",
      "choice": "higher",
-     "payout_multiplier": "1.0",
+     "payout_multiplier": "1.25",
      "choice_display": "Higher"
     },
     {
@@ -5692,7 +5692,7 @@
     {
      "id": "opt-453",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -5714,7 +5714,7 @@
   },
   {
    "id": "line-228",
-   "stat_value": "38.5",
+   "stat_value": "36.5",
    "status": "active",
    "options": [
     {
@@ -5798,7 +5798,7 @@
   },
   {
    "id": "line-231",
-   "stat_value": "30.5",
+   "stat_value": "27.5",
    "status": "active",
    "options": [
     {
@@ -5826,7 +5826,7 @@
   },
   {
    "id": "line-232",
-   "stat_value": "2.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
@@ -5854,7 +5854,7 @@
   },
   {
    "id": "line-234",
-   "stat_value": "241.5",
+   "stat_value": "239.5",
    "status": "active",
    "options": [
     {
@@ -5882,7 +5882,7 @@
   },
   {
    "id": "line-236",
-   "stat_value": "45.5",
+   "stat_value": "47.5",
    "status": "active",
    "options": [
     {
@@ -5994,7 +5994,7 @@
   },
   {
    "id": "line-240",
-   "stat_value": "1.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -6078,13 +6078,13 @@
   },
   {
    "id": "line-245",
-   "stat_value": "42.5",
+   "stat_value": "38.5",
    "status": "active",
    "options": [
     {
      "id": "opt-489",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -6134,7 +6134,7 @@
   },
   {
    "id": "line-248",
-   "stat_value": "158.5",
+   "stat_value": "170.5",
    "status": "active",
    "options": [
     {
@@ -6190,13 +6190,13 @@
   },
   {
    "id": "line-251",
-   "stat_value": "1.5",
+   "stat_value": "0.5",
    "status": "active",
    "options": [
     {
      "id": "opt-501",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -6392,7 +6392,7 @@
     {
      "id": "opt-519",
      "choice": "higher",
-     "payout_multiplier": "1.0",
+     "payout_multiplier": "1.25",
      "choice_display": "Higher"
     },
     {
@@ -6470,7 +6470,7 @@
   },
   {
    "id": "line-265",
-   "stat_value": "2.5",
+   "stat_value": "3.5",
    "status": "active",
    "options": [
     {
@@ -6526,7 +6526,7 @@
   },
   {
    "id": "line-267",
-   "stat_value": "28.5",
+   "stat_value": "26.5",
    "status": "active",
    "options": [
     {
@@ -6610,13 +6610,13 @@
   },
   {
    "id": "line-270",
-   "stat_value": "36.5",
+   "stat_value": "37.5",
    "status": "active",
    "options": [
     {
      "id": "opt-539",
      "choice": "higher",
-     "payout_multiplier": "1.0",
+     "payout_multiplier": "1.25",
      "choice_display": "Higher"
     },
     {
@@ -6778,13 +6778,13 @@
   },
   {
    "id": "line-276",
-   "stat_value": "256.5",
+   "stat_value": "241.5",
    "status": "active",
    "options": [
     {
      "id": "opt-551",
      "choice": "higher",
-     "payout_multiplier": "1.0",
+     "payout_multiplier": "1.25",
      "choice_display": "Higher"
     },
     {
@@ -6806,13 +6806,13 @@
   },
   {
    "id": "line-278",
-   "stat_value": "67.5",
+   "stat_value": "69.5",
    "status": "active",
    "options": [
     {
      "id": "opt-555",
      "choice": "higher",
-     "payout_multiplier": "1.0",
+     "payout_multiplier": "1.25",
      "choice_display": "Higher"
     },
     {
@@ -6890,13 +6890,13 @@
   },
   {
    "id": "line-281",
-   "stat_value": "33.5",
+   "stat_value": "32.5",
    "status": "active",
    "options": [
     {
      "id": "opt-561",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -6946,7 +6946,7 @@
   },
   {
    "id": "line-284",
-   "stat_value": "46.5",
+   "stat_value": "47.5",
    "status": "active",
    "options": [
     {
@@ -6974,7 +6974,7 @@
   },
   {
    "id": "line-285",
-   "stat_value": "3.5",
+   "stat_value": "4.5",
    "status": "active",
    "options": [
     {
@@ -7002,13 +7002,13 @@
   },
   {
    "id": "line-287",
-   "stat_value": "36.5",
+   "stat_value": "33.5",
    "status": "active",
    "options": [
     {
      "id": "opt-573",
      "choice": "higher",
-     "payout_multiplier": "1.25",
+     "payout_multiplier": "1.0",
      "choice_display": "Higher"
     },
     {
@@ -7058,7 +7058,7 @@
   },
   {
    "id": "line-290",
-   "stat_value": "149.5",
+   "stat_value": "164.5",
    "status": "active",
    "options": [
     {
@@ -7086,7 +7086,7 @@
   },
   {
    "id": "line-292",
-   "stat_value": "84.5",
+   "stat_value": "90.5",
    "status": "active",
    "options": [
     {
@@ -7114,7 +7114,7 @@
   },
   {
    "id": "line-293",
-   "stat_value": "2.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
@@ -7170,7 +7170,7 @@
   },
   {
    "id": "line-295",
-   "stat_value": "21.5",
+   "stat_value": "23.5",
    "status": "active",
    "options": [
     {
@@ -7226,7 +7226,7 @@
   },
   {
    "id": "line-298",
-   "stat_value": "40.5",
+   "stat_value": "38.5",
    "status": "active",
    "options": [
     {
@@ -7282,7 +7282,7 @@
   },
   {
    "id": "line-301",
-   "stat_value": "17.5",
+   "stat_value": "18.5",
    "status": "active",
    "options": [
     {
@@ -7338,7 +7338,7 @@
   },
   {
    "id": "line-304",
-   "stat_value": "306.5",
+   "stat_value": "315.5",
    "status": "active",
    "options": [
     {
@@ -7366,7 +7366,7 @@
   },
   {
    "id": "line-306",
-   "stat_value": "57.5",
+   "stat_value": "53.5",
    "status": "active",
    "options": [
     {
@@ -7450,13 +7450,13 @@
   },
   {
    "id": "line-309",
-   "stat_value": "35.5",
+   "stat_value": "33.5",
    "status": "active",
    "options": [
     {
      "id": "opt-617",
      "choice": "higher",
-     "payout_multiplier": "1.0",
+     "payout_multiplier": "1.25",
      "choice_display": "Higher"
     },
     {
@@ -7506,7 +7506,7 @@
   },
   {
    "id": "line-312",
-   "stat_value": "53.5",
+   "stat_value": "55.5",
    "status": "active",
    "options": [
     {
@@ -7562,7 +7562,7 @@
   },
   {
    "id": "line-315",
-   "stat_value": "19.5",
+   "stat_value": "21.5",
    "status": "active",
    "options": [
     {
@@ -7590,7 +7590,7 @@
   },
   {
    "id": "line-316",
-   "stat_value": "2.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
@@ -7618,7 +7618,7 @@
   },
   {
    "id": "line-318",
-   "stat_value": "257.5",
+   "stat_value": "234.5",
    "status": "active",
    "options": [
     {
@@ -7674,7 +7674,7 @@
   },
   {
    "id": "line-320",
-   "stat_value": "118.5",
+   "stat_value": "128.5",
    "status": "active",
    "options": [
     {
@@ -7758,7 +7758,7 @@
   },
   {
    "id": "line-323",
-   "stat_value": "37.5",
+   "stat_value": "39.5",
    "status": "active",
    "options": [
     {
@@ -7786,7 +7786,7 @@
   },
   {
    "id": "line-324",
-   "stat_value": "3.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -7842,7 +7842,7 @@
   },
   {
    "id": "line-326",
-   "stat_value": "38.5",
+   "stat_value": "40.5",
    "status": "active",
    "options": [
     {
@@ -7926,7 +7926,7 @@
   },
   {
    "id": "line-329",
-   "stat_value": "243.5",
+   "stat_value": "210.5",
    "status": "active",
    "options": [
     {
@@ -7982,7 +7982,7 @@
   },
   {
    "id": "line-331",
-   "stat_value": "110.5",
+   "stat_value": "107.5",
    "status": "active",
    "options": [
     {
@@ -8066,7 +8066,7 @@
   },
   {
    "id": "line-334",
-   "stat_value": "39.5",
+   "stat_value": "40.5",
    "status": "active",
    "options": [
     {
@@ -8150,7 +8150,7 @@
   },
   {
    "id": "line-337",
-   "stat_value": "49.5",
+   "stat_value": "55.5",
    "status": "active",
    "options": [
     {
@@ -8234,7 +8234,7 @@
   },
   {
    "id": "line-340",
-   "stat_value": "251.5",
+   "stat_value": "256.5",
    "status": "active",
    "options": [
     {
@@ -8290,7 +8290,7 @@
   },
   {
    "id": "line-342",
-   "stat_value": "89.5",
+   "stat_value": "90.5",
    "status": "active",
    "options": [
     {
@@ -8318,7 +8318,7 @@
   },
   {
    "id": "line-343",
-   "stat_value": "2.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
@@ -8374,7 +8374,7 @@
   },
   {
    "id": "line-345",
-   "stat_value": "31.5",
+   "stat_value": "35.5",
    "status": "active",
    "options": [
     {
@@ -8458,7 +8458,7 @@
   },
   {
    "id": "line-348",
-   "stat_value": "23.5",
+   "stat_value": "25.5",
    "status": "active",
    "options": [
     {
@@ -8486,7 +8486,7 @@
   },
   {
    "id": "line-349",
-   "stat_value": "2.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
@@ -8542,7 +8542,7 @@
   },
   {
    "id": "line-351",
-   "stat_value": "179.5",
+   "stat_value": "181.5",
    "status": "active",
    "options": [
     {
@@ -8570,7 +8570,7 @@
   },
   {
    "id": "line-353",
-   "stat_value": "81.5",
+   "stat_value": "79.5",
    "status": "active",
    "options": [
     {
@@ -8654,7 +8654,7 @@
   },
   {
    "id": "line-356",
-   "stat_value": "31.5",
+   "stat_value": "30.5",
    "status": "active",
    "options": [
     {
@@ -8682,7 +8682,7 @@
   },
   {
    "id": "line-357",
-   "stat_value": "2.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
@@ -8710,7 +8710,7 @@
   },
   {
    "id": "line-359",
-   "stat_value": "26.5",
+   "stat_value": "25.5",
    "status": "active",
    "options": [
     {
@@ -8738,7 +8738,7 @@
   },
   {
    "id": "line-360",
-   "stat_value": "2.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
@@ -8766,7 +8766,7 @@
   },
   {
    "id": "line-362",
-   "stat_value": "207.5",
+   "stat_value": "222.5",
    "status": "active",
    "options": [
     {
@@ -8794,7 +8794,7 @@
   },
   {
    "id": "line-364",
-   "stat_value": "62.5",
+   "stat_value": "61.5",
    "status": "active",
    "options": [
     {
@@ -8878,7 +8878,7 @@
   },
   {
    "id": "line-367",
-   "stat_value": "48.5",
+   "stat_value": "44.5",
    "status": "active",
    "options": [
     {
@@ -8906,7 +8906,7 @@
   },
   {
    "id": "line-368",
-   "stat_value": "2.5",
+   "stat_value": "3.5",
    "status": "active",
    "options": [
     {
@@ -8962,7 +8962,7 @@
   },
   {
    "id": "line-370",
-   "stat_value": "29.5",
+   "stat_value": "28.5",
    "status": "active",
    "options": [
     {
@@ -9046,7 +9046,7 @@
   },
   {
    "id": "line-373",
-   "stat_value": "300.5",
+   "stat_value": "285.5",
    "status": "active",
    "options": [
     {
@@ -9102,7 +9102,7 @@
   },
   {
    "id": "line-375",
-   "stat_value": "107.5",
+   "stat_value": "120.5",
    "status": "active",
    "options": [
     {
@@ -9130,7 +9130,7 @@
   },
   {
    "id": "line-376",
-   "stat_value": "2.5",
+   "stat_value": "1.5",
    "status": "active",
    "options": [
     {
@@ -9186,7 +9186,7 @@
   },
   {
    "id": "line-378",
-   "stat_value": "45.5",
+   "stat_value": "47.5",
    "status": "active",
    "options": [
     {
@@ -9270,7 +9270,7 @@
   },
   {
    "id": "line-381",
-   "stat_value": "34.5",
+   "stat_value": "31.5",
    "status": "active",
    "options": [
     {
@@ -9298,7 +9298,7 @@
   },
   {
    "id": "line-382",
-   "stat_value": "3.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -9354,7 +9354,7 @@
   },
   {
    "id": "line-384",
-   "stat_value": "212.5",
+   "stat_value": "206.5",
    "status": "active",
    "options": [
     {
@@ -9410,7 +9410,7 @@
   },
   {
    "id": "line-386",
-   "stat_value": "83.5",
+   "stat_value": "80.5",
    "status": "active",
    "options": [
     {
@@ -9494,7 +9494,7 @@
   },
   {
    "id": "line-389",
-   "stat_value": "44.5",
+   "stat_value": "42.5",
    "status": "active",
    "options": [
     {
@@ -9550,7 +9550,7 @@
   },
   {
    "id": "line-392",
-   "stat_value": "21.5",
+   "stat_value": "22.5",
    "status": "active",
    "options": [
     {
@@ -9634,7 +9634,7 @@
   },
   {
    "id": "line-395",
-   "stat_value": "306.5",
+   "stat_value": "309.5",
    "status": "active",
    "options": [
     {
@@ -9662,7 +9662,7 @@
   },
   {
    "id": "line-397",
-   "stat_value": "65.5",
+   "stat_value": "66.5",
    "status": "active",
    "options": [
     {
@@ -9746,7 +9746,7 @@
   },
   {
    "id": "line-400",
-   "stat_value": "56.5",
+   "stat_value": "51.5",
    "status": "active",
    "options": [
     {
@@ -9774,7 +9774,7 @@
   },
   {
    "id": "line-401",
-   "stat_value": "3.5",
+   "stat_value": "2.5",
    "status": "active",
    "options": [
     {
@@ -9802,7 +9802,7 @@
   },
   {
    "id": "line-403",
-   "stat_value": "43.5",
+   "stat_value": "46.5",
    "status": "active",
    "options": [
     {
@@ -15989,7 +15989,7 @@
    "id": "nfl-game-0",
    "home_team_id": "team-13",
    "away_team_id": "team-14",
-   "scheduled_at": "2025-11-16T18:00:00Z",
+   "scheduled_at": "2025-11-02T18:00:00Z",
    "sport_id": "NFL",
    "title": "BUF @ KC"
   },
@@ -15997,7 +15997,7 @@
    "id": "nfl-game-1",
    "home_team_id": "team-6",
    "away_team_id": "team-15",
-   "scheduled_at": "2025-11-16T18:00:00Z",
+   "scheduled_at": "2025-11-02T18:00:00Z",
    "sport_id": "NFL",
    "title": "DAL @ PHI"
   },
@@ -16005,7 +16005,7 @@
    "id": "nfl-game-2",
    "home_team_id": "team-16",
    "away_team_id": "team-8",
-   "scheduled_at": "2025-11-16T18:00:00Z",
+   "scheduled_at": "2025-11-02T18:00:00Z",
    "sport_id": "NFL",
    "title": "SEA @ SF"
   },
@@ -16013,7 +16013,7 @@
    "id": "nfl-game-3",
    "home_team_id": "team-17",
    "away_team_id": "team-18",
-   "scheduled_at": "2025-11-16T18:00:00Z",
+   "scheduled_at": "2025-11-02T18:00:00Z",
    "sport_id": "NFL",
    "title": "GB @ DET"
   },
@@ -16021,7 +16021,7 @@
    "id": "nfl-game-4",
    "home_team_id": "team-19",
    "away_team_id": "team-20",
-   "scheduled_at": "2025-11-16T18:00:00Z",
+   "scheduled_at": "2025-11-02T18:00:00Z",
    "sport_id": "NFL",
    "title": "CIN @ BAL"
   },
@@ -16029,7 +16029,7 @@
    "id": "nfl-game-5",
    "home_team_id": "team-21",
    "away_team_id": "team-22",
-   "scheduled_at": "2025-11-16T18:00:00Z",
+   "scheduled_at": "2025-11-02T18:00:00Z",
    "sport_id": "NFL",
    "title": "NYJ @ MIA"
   },
@@ -16037,7 +16037,7 @@
    "id": "nfl-game-6",
    "home_team_id": "team-7",
    "away_team_id": "team-23",
-   "scheduled_at": "2025-11-16T18:00:00Z",
+   "scheduled_at": "2025-11-02T18:00:00Z",
    "sport_id": "NFL",
    "title": "IND @ HOU"
   },
@@ -16045,7 +16045,7 @@
    "id": "nfl-game-7",
    "home_team_id": "team-24",
    "away_team_id": "team-25",
-   "scheduled_at": "2025-11-16T18:00:00Z",
+   "scheduled_at": "2025-11-02T18:00:00Z",
    "sport_id": "NFL",
    "title": "TB @ LAR"
   },

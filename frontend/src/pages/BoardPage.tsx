@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { fetchBoard, fetchMarkets } from '../lib/api'
+import { fetchBoard, fetchMarkets, recordSlate } from '../lib/api'
 import type { BoardResponse, League, MarketOption, Mode, PricedBet } from '../lib/types'
 import { BetTypeBar } from '../components/BetTypeBar'
 import { BetTable } from '../components/BetTable'
@@ -23,6 +23,25 @@ export function BoardPage({ league, slip, onToggleSlip }: Props) {
   const [selected, setSelected] = useState<PricedBet | null>(null)
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [recording, setRecording] = useState(false)
+  const [recorded, setRecorded] = useState<string | null>(null)
+
+  const record = () => {
+    setRecording(true)
+    recordSlate(league, mode)
+      .then((result) => {
+        setRecorded(
+          result.recorded > 0
+            ? `Recorded ${result.recorded} picks for grading.`
+            : result.updated > 0
+              ? `Already on file — refreshed the closing line on ${result.updated} picks.`
+              : 'Already on file, and every pick is already settled.',
+        )
+        setTimeout(() => setRecorded(null), 5000)
+      })
+      .catch((err) => setError(String(err.message ?? err)))
+      .finally(() => setRecording(false))
+  }
 
   useEffect(() => { fetchMarkets(league).then(setMarkets).catch(() => setMarkets([])) }, [league])
 
@@ -84,8 +103,8 @@ export function BoardPage({ league, slip, onToggleSlip }: Props) {
         onRefresh={load} busy={busy}
       />
 
-      <div className="mx-auto max-w-[1600px] px-4 pt-3">
-        <p className="text-xs text-slate-500">
+      <div className="mx-auto flex max-w-[1600px] items-start gap-4 px-4 pt-3">
+        <p className="flex-1 text-xs text-slate-500">
           {mode === 'value' ? (
             <>
               Ranked by <strong className="text-emerald-400/90">Score</strong> — the edge over
@@ -100,7 +119,23 @@ export function BoardPage({ league, slip, onToggleSlip }: Props) {
             </>
           )}
         </p>
+        <button
+          onClick={record}
+          disabled={recording || !board?.bets.length}
+          title="Save this slate so the Track Record can grade it once the games finish. Safe to click repeatedly — it updates the line rather than duplicating picks."
+          className="shrink-0 rounded-md border border-ink-700 bg-ink-850 px-3 py-1.5 text-xs text-slate-300 hover:border-emerald-500/50 hover:text-white disabled:opacity-40"
+        >
+          {recording ? 'Recording…' : 'Record slate'}
+        </button>
       </div>
+
+      {recorded && (
+        <div className="mx-auto max-w-[1600px] px-4 pt-2">
+          <div className="rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-xs text-emerald-200">
+            {recorded}
+          </div>
+        </div>
+      )}
 
       {board && (board.notes.length > 0 || board.unmapped_count > 0 || board.source !== 'live') && (
         <div className="mx-auto max-w-[1600px] space-y-1.5 px-4 pt-3">

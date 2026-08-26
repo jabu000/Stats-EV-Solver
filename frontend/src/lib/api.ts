@@ -1,6 +1,6 @@
 import type {
-  AppSettings, BoardResponse, EntryResponse, League, MarketOption,
-  Mode, PricedBet, ProviderStatus, TrackRecord,
+  AppSettings, BoardResponse, EntryResponse, GradeReport, League, MarketOption,
+  Mode, PendingPick, PricedBet, ProviderStatus, TrackRecord,
 } from './types'
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
@@ -82,3 +82,18 @@ export const testConnections = () =>
 
 export const fetchTrackRecord = (league?: League) =>
   request<TrackRecord>(`/api/track-record${league ? `?league=${league}` : ''}`)
+
+export const recordSlate = (league: League, mode: Mode) =>
+  request<{ recorded: number; updated: number; notes: string[] }>(
+    `/api/board/${league}/snapshot?mode=${mode}`,
+    { method: 'POST' },
+  )
+
+export const fetchPending = (league?: League) =>
+  request<PendingPick[]>(`/api/track-record/pending${league ? `?league=${league}` : ''}`)
+
+export const gradeNow = (league?: League) =>
+  request<GradeReport>('/api/track-record/grade/auto', {
+    method: 'POST',
+    body: JSON.stringify(league ? { league } : {}),
+  })

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { fetchTrackRecord } from '../lib/api'
+import { fetchTrackRecord, gradeNow } from '../lib/api'
 import type { League, TrackRecord } from '../lib/types'
 import { edgeColor, marketLabel, pct, signedPct } from '../lib/format'
 
@@ -7,12 +7,38 @@ export function TrackRecordPage() {
   const [league, setLeague] = useState<League | ''>('')
   const [record, setRecord] = useState<TrackRecord | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const [grading, setGrading] = useState(false)
+  const [gradeNote, setGradeNote] = useState<string[] | null>(null)
 
-  useEffect(() => {
+  const load = () =>
     fetchTrackRecord(league || undefined)
       .then((response) => { setRecord(response); setError(null) })
       .catch((err) => setError(String(err.message ?? err)))
-  }, [league])
+
+  useEffect(() => { load() }, [league])
+
+  const runGrading = () => {
+    setGrading(true)
+    setGradeNote(null)
+    gradeNow(league || undefined)
+      .then((report) => {
+        const lines = report.reports.length === 0
+          ? ['Nothing is waiting on results.']
+          : [`Settled ${report.graded} picks for ${report.date}.`]
+        for (const entry of report.reports) {
+          if (entry.still_pending > 0) {
+            lines.push(`${entry.league}: ${entry.still_pending} still pending.`)
+          }
+          // Surface every reason a pick could not be graded — a grading run that
+          // quietly settles a biased subset is worse than one that fails loudly.
+          for (const problem of entry.problems) lines.push(`${entry.league}: ${problem}`)
+        }
+        setGradeNote(lines)
+        return load()
+      })
+      .catch((err) => setError(String(err.message ?? err)))
+      .finally(() => setGrading(false))
+  }
 
   if (error) {
     return <Shell><p className="rounded-lg border border-rose-500/30 bg-rose-500/10 px-3 py-2 text-sm text-rose-200">{error}</p></Shell>
@@ -28,17 +54,40 @@ export function TrackRecordPage() {
             Every projection the platform published, graded against what actually happened.
           </p>
         </div>
-        <select
-          value={league}
-          onChange={(event) => setLeague(event.target.value as League | '')}
-          className="rounded-md border border-ink-700 bg-ink-850 px-3 py-1.5 text-sm text-slate-200"
-        >
-          <option value="">All leagues</option>
-          <option value="MLB">MLB</option>
-          <option value="NFL">NFL</option>
-          <option value="CFB">CFB</option>
-        </select>
+        <div className="flex items-center gap-3">
+          {record && record.pending_picks > 0 && (
+            <span className="rounded-full border border-amber-500/30 bg-amber-500/10 px-2.5 py-1 text-xs text-amber-200">
+              {record.pending_picks} awaiting results
+            </span>
+          )}
+          <button
+            onClick={runGrading}
+            disabled={grading}
+            title="Fetch real results and settle any recorded picks they cover."
+            className="rounded-md bg-emerald-500 px-3 py-1.5 text-sm font-medium text-ink-950 hover:bg-emerald-400 disabled:opacity-50"
+          >
+            {grading ? 'Grading…' : 'Grade now'}
+          </button>
+          <select
+            value={league}
+            onChange={(event) => setLeague(event.target.value as League | '')}
+            className="rounded-md border border-ink-700 bg-ink-850 px-3 py-1.5 text-sm text-slate-200"
+          >
+            <option value="">All leagues</option>
+            <option value="MLB">MLB</option>
+            <option value="NFL">NFL</option>
+            <option value="CFB">CFB</option>
+          </select>
+        </div>
       </div>
+
+      {gradeNote && (
+        <ul className="mb-4 space-y-1 rounded-lg border border-ink-700 bg-ink-900 px-3 py-2">
+          {gradeNote.map((line, index) => (
+            <li key={index} className="text-xs text-slate-400">{line}</li>
+          ))}
+        </ul>
+      )}
 
       {record.graded_picks === 0 ? (
         <div className="rounded-xl border border-ink-700 bg-ink-900 px-5 py-8 text-center">
@@ -46,9 +95,10 @@ export function TrackRecordPage() {
             {record.total_picks.toLocaleString()} picks recorded, none graded yet.
           </p>
           <p className="mx-auto mt-2 max-w-xl text-sm text-slate-500">
-            Results are graded by posting actual stat values to <code>/api/track-record/grade</code>.
-            Until picks are graded, model probabilities stay <strong>uncalibrated</strong> — the
-            platform will not pretend to know how accurate it is.
+            Record a slate from a league tab, then hit <strong>Grade now</strong> once the
+            games finish — or let the scheduled job do both. Until picks are graded, model
+            probabilities stay <strong>uncalibrated</strong> and the platform will not
+            pretend to know how accurate it is.
           </p>
         </div>
       ) : (

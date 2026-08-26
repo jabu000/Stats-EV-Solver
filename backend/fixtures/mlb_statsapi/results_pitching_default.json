@@ -1,0 +1,140 @@
+{
+ "stats": [
+  {
+   "splits": [
+    {
+     "player": {
+      "id": 600019,
+      "fullName": "Gerrit Cole"
+     },
+     "stat": {
+      "strikeOuts": 1,
+      "hits": 4,
+      "inningsPitched": "6.0"
+     }
+    },
+    {
+     "player": {
+      "id": 600020,
+      "fullName": "Garrett Crochet"
+     },
+     "stat": {
+      "strikeOuts": 9,
+      "hits": 3,
+      "inningsPitched": "3.0"
+     }
+    },
+    {
+     "player": {
+      "id": 600039,
+      "fullName": "Yoshinobu Yamamoto"
+     },
+     "stat": {
+      "strikeOuts": 5,
+      "hits": 4,
+      "inningsPitched": "5.3"
+     }
+    },
+    {
+     "player": {
+      "id": 600040,
+      "fullName": "Dylan Cease"
+     },
+     "stat": {
+      "strikeOuts": 4,
+      "hits": 8,
+      "inningsPitched": "4.4"
+     }
+    },
+    {
+     "player": {
+      "id": 600059,
+      "fullName": "Chris Sale"
+     },
+     "stat": {
+      "strikeOuts": 7,
+      "hits": 4,
+      "inningsPitched": "6.3"
+     }
+    },
+    {
+     "player": {
+      "id": 600060,
+      "fullName": "Zack Wheeler"
+     },
+     "stat": {
+      "strikeOuts": 5,
+      "hits": 5,
+      "inningsPitched": "5.1"
+     }
+    },
+    {
+     "player": {
+      "id": 600079,
+      "fullName": "Framber Valdez"
+     },
+     "stat": {
+      "strikeOuts": 9,
+      "hits": 6,
+      "inningsPitched": "6.7"
+     }
+    },
+    {
+     "player": {
+      "id": 600080,
+      "fullName": "Logan Gilbert"
+     },
+     "stat": {
+      "strikeOuts": 1,
+      "hits": 6,
+      "inningsPitched": "3.7"
+     }
+    },
+    {
+     "player": {
+      "id": 600099,
+      "fullName": "Shota Imanaga"
+     },
+     "stat": {
+      "strikeOuts": 5,
+      "hits": 6,
+      "inningsPitched": "5.0"
+     }
+    },
+    {
+     "player": {
+      "id": 600100,
+      "fullName": "Freddy Peralta"
+     },
+     "stat": {
+      "strikeOuts": 0,
+      "hits": 2,
+      "inningsPitched": "4.8"
+     }
+    },
+    {
+     "player": {
+      "id": 600119,
+      "fullName": "Kyle Freeland"
+     },
+     "stat": {
+      "strikeOuts": 5,
+      "hits": 7,
+      "inningsPitched": "5.7"
+     }
+    },
+    {
+     "player": {
+      "id": 600120,
+      "fullName": "Zac Gallen"
+     },
+     "stat": {
+      "strikeOuts": 5,
+      "hits": 4,
+      "inningsPitched": "5.9"
+     }
+    }
+   ]
+  }
+ ]
+}

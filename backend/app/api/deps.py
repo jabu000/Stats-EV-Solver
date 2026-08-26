@@ -8,7 +8,10 @@ from sqlalchemy.orm import Session
 
 from app.db import get_session
 from app.models.calibration import Calibrator, fit_calibrator
-from app.tables import ProjectionRow
+from app.tables import ProjectionRow, Snapshot
+
+#: Snapshot sources that are demonstration data, never real published picks.
+DEMO_SOURCES = ("seed",)
 
 __all__ = ["get_session", "build_calibrator"]
 
@@ -25,6 +28,11 @@ def build_calibrator(session: Session) -> Calibrator:
             ProjectionRow.league, ProjectionRow.market,
             ProjectionRow.model_probability, ProjectionRow.won,
         )
+        .join(Snapshot, ProjectionRow.snapshot_id == Snapshot.id)
+        # `make seed` inserts hundreds of deliberately overconfident fake picks so the
+        # Track Record tab has something to show. Letting those reach the calibrator
+        # would silently distort every real probability on the board.
+        .filter(Snapshot.source.notin_(DEMO_SOURCES))
         .filter(ProjectionRow.won.isnot(None))
         .all()
     )

@@ -17,6 +17,8 @@ largest exactly where the lines are set.
 
 from __future__ import annotations
 
+import hashlib
+
 import numpy as np
 
 from app.domain import League, Market
@@ -473,5 +475,13 @@ def _project_anytime_td(
 
 
 def _seed(player_key: str, market: str) -> int:
-    """Deterministic per-player seed, so a refresh does not jitter the board."""
-    return abs(hash(f"{player_key}:{market}")) % (2**31)
+    """Deterministic per-player seed, so a refresh does not jitter the board.
+
+    `hash()` on a str is salted per process, so it is stable within one run and
+    different in the next. That is enough to move a Monte-Carlo mean by a percent or so
+    and flip the recommended side of a line the model sees as a coin flip -- which in
+    turn makes recording the same slate twice produce two rows. A stable digest keeps
+    the same slate priced the same way in every process.
+    """
+    digest = hashlib.blake2b(f"{player_key}:{market}".encode(), digest_size=4).digest()
+    return int.from_bytes(digest, "big") % (2**31)

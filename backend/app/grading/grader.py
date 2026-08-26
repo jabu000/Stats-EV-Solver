@@ -15,7 +15,7 @@ actual hit rate side by side makes overconfidence impossible to hide.
 from __future__ import annotations
 
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
 from sqlalchemy.orm import Session
 
@@ -25,7 +25,7 @@ from app.schemas import (
     MarketRecord,
     TrackRecordResponse,
 )
-from app.tables import ProjectionRow
+from app.tables import ProjectionRow, Snapshot
 
 #: Probability buckets for the calibration curve.
 BUCKET_EDGES = [0.0, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.8, 1.0]
@@ -45,6 +45,104 @@ def grade_projection(row: ProjectionRow, actual: float) -> ProjectionRow:
     row.actual_value = actual
     row.graded_at = datetime.now(timezone.utc)
     return row
+
+
+def auto_grade(
+    session: Session,
+    league: League,
+    on: date,
+    season: int | None = None,
+    week: int | None = None,
+) -> dict:
+    """Fetch actual results for one league and settle every pick they cover.
+
+    Reports what it *could not* grade and why, rather than returning a bare count. A
+    grading job that quietly settles 3 of 40 picks and calls it success is worse than
+    one that fails loudly, because the track record silently becomes a biased sample of
+    whichever players happened to be in the feed.
+    """
+    from app.grading.results import fetch_results
+
+    fetched = fetch_results(league, on, season=season, week=week)
+
+    pending = (
+        session.query(ProjectionRow)
+        .filter(ProjectionRow.graded_at.is_(None))
+        .filter(ProjectionRow.league == league.value)
+        .filter(ProjectionRow.event_date == on.isoformat())
+        .all()
+    )
+
+    graded = 0
+    unmatched: list[str] = []
+    for row in pending:
+        actual = fetched.results.get((row.player_key, row.market))
+        if actual is None:
+            unmatched.append(f"{row.player_name} ({Market(row.market).label})")
+            continue
+        grade_projection(row, actual)
+        graded += 1
+    session.commit()
+
+    return {
+        "league": league.value,
+        "date": on.isoformat(),
+        "pending_before": len(pending),
+        "graded": graded,
+        "still_pending": len(pending) - graded,
+        "source": fetched.source,
+        "problems": fetched.problems,
+        # Cap the echo: an empty feed would otherwise list the entire slate.
+        "unmatched_sample": unmatched[:15],
+    }
+
+
+def pending_dates(
+    session: Session, leagues: list[League] | None = None, max_days: int = 14
+) -> list[date]:
+    """Event dates that still have ungraded picks, newest first.
+
+    Bounded by `max_days` so a long-abandoned database does not make every grading run
+    re-query months of dead dates.
+    """
+    query = session.query(ProjectionRow.event_date).filter(
+        ProjectionRow.graded_at.is_(None), ProjectionRow.event_date.isnot(None)
+    )
+    if leagues:
+        query = query.filter(ProjectionRow.league.in_([l.value for l in leagues]))
+
+    found: list[date] = []
+    for (value,) in query.distinct().all():
+        try:
+            found.append(date.fromisoformat(value))
+        except (TypeError, ValueError):
+            continue
+    return sorted(found, reverse=True)[:max_days]
+
+
+def pending_picks(
+    session: Session, league: League | None = None, limit: int = 200
+) -> list[dict]:
+    """Ungraded picks, with the keys needed to settle them by hand."""
+    query = session.query(ProjectionRow).filter(ProjectionRow.graded_at.is_(None))
+    if league is not None:
+        query = query.filter(ProjectionRow.league == league.value)
+
+    rows = query.order_by(ProjectionRow.event_date.desc()).limit(limit).all()
+    return [
+        {
+            "player_key": row.player_key,
+            "player_name": row.player_name,
+            "league": row.league,
+            "market": row.market,
+            "market_label": Market(row.market).label,
+            "side": row.side,
+            "stat_line": row.stat_line,
+            "event_date": row.event_date,
+            "probability": round(row.calibrated_probability, 4),
+        }
+        for row in rows
+    ]
 
 
 def grade_from_results(
@@ -71,10 +169,23 @@ def grade_from_results(
 
 
 def build_track_record(
-    session: Session, league: League | None = None, market: Market | None = None
+    session: Session,
+    league: League | None = None,
+    market: Market | None = None,
+    include_demo: bool = False,
 ) -> TrackRecordResponse:
-    """Everything the Track Record tab shows."""
+    """Everything the Track Record tab shows.
+
+    Demo picks from `make seed` are excluded unless explicitly asked for, so the numbers
+    on screen always describe real published picks.
+    """
+    from app.api.deps import DEMO_SOURCES
+
     query = session.query(ProjectionRow)
+    if not include_demo:
+        query = query.join(
+            Snapshot, ProjectionRow.snapshot_id == Snapshot.id
+        ).filter(Snapshot.source.notin_(DEMO_SOURCES))
     if league is not None:
         query = query.filter(ProjectionRow.league == league.value)
     if market is not None:

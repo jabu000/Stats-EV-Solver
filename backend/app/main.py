@@ -7,8 +7,7 @@ from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
-from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse, PlainTextResponse, Response
 
 from app.api import boards, entries, settings as settings_api, track_record
 from app.config import REPO_ROOT, get_settings
@@ -59,24 +58,28 @@ def health() -> dict:
     return {"status": "ok", "data_mode": get_settings().data_mode.value}
 
 
-def _mount_frontend() -> None:
-    """Serve the built SPA, if it has been built."""
+@app.get("/{full_path:path}", include_in_schema=False)
+def spa(full_path: str) -> Response:
+    """Serve the built SPA.
+
+    Resolved per request rather than at import: the frontend is often built *after* the
+    server is already running -- especially once it runs as a background service -- and
+    mounting at import meant a fresh build kept serving a blank page until someone
+    thought to restart. A missing build says so instead of 404ing silently.
+    """
     if not FRONTEND_DIST.exists():
-        return
+        return PlainTextResponse(
+            "The frontend has not been built yet. Run `make build`, then reload.\n"
+            "The API itself is running -- see /docs.",
+            status_code=503,
+        )
 
-    app.mount(
-        "/assets",
-        StaticFiles(directory=FRONTEND_DIST / "assets"),
-        name="assets",
-    )
-
-    @app.get("/{full_path:path}", include_in_schema=False)
-    def spa(full_path: str) -> FileResponse:
-        # Client-side routing: any non-API path returns the shell.
-        candidate = FRONTEND_DIST / full_path
-        if full_path and candidate.is_file():
-            return FileResponse(candidate)
-        return FileResponse(FRONTEND_DIST / "index.html")
-
-
-_mount_frontend()
+    # Client-side routing: any non-API path returns the shell.
+    candidate = (FRONTEND_DIST / full_path).resolve()
+    if (
+        full_path
+        and candidate.is_file()
+        and candidate.is_relative_to(FRONTEND_DIST.resolve())
+    ):
+        return FileResponse(candidate)
+    return FileResponse(FRONTEND_DIST / "index.html")

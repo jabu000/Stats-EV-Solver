@@ -129,3 +129,32 @@ export interface TrackRecord {
   roi_series: { index: number; date: string | null; units: number }[]
   recent: Record<string, unknown>[]
 }
+
+export interface PendingPick {
+  player_key: string
+  player_name: string
+  league: League
+  market: string
+  market_label: string
+  side: Side
+  stat_line: number
+  event_date: string | null
+  probability: number
+}
+
+export interface GradeReportEntry {
+  league: League
+  date: string
+  pending_before: number
+  graded: number
+  still_pending: number
+  source: string
+  problems: string[]
+  unmatched_sample: string[]
+}
+
+export interface GradeReport {
+  date: string
+  graded: number
+  reports: GradeReportEntry[]
+}

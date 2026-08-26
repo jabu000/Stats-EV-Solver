@@ -1,0 +1,1158 @@
+[
+ {
+  "id": 5000,
+  "teams": [
+   {
+    "school": "Georgia",
+    "categories": [
+     {
+      "name": "receiving",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600003",
+          "stat": "56"
+         },
+         {
+          "id": "cfb600004",
+          "stat": "11"
+         },
+         {
+          "id": "cfb600006",
+          "stat": "34"
+         },
+         {
+          "id": "cfb600007",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600008",
+          "stat": "103"
+         },
+         {
+          "id": "cfb600009",
+          "stat": "88"
+         }
+        ]
+       },
+       {
+        "name": "REC",
+        "athletes": [
+         {
+          "id": "cfb600003",
+          "stat": "2"
+         },
+         {
+          "id": "cfb600004",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600006",
+          "stat": "3"
+         },
+         {
+          "id": "cfb600007",
+          "stat": "4"
+         },
+         {
+          "id": "cfb600008",
+          "stat": "8"
+         },
+         {
+          "id": "cfb600009",
+          "stat": "7"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600003",
+          "stat": "2"
+         },
+         {
+          "id": "cfb600004",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600006",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600007",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600008",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600009",
+          "stat": "0"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "rushing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600002",
+          "stat": "126"
+         },
+         {
+          "id": "cfb600005",
+          "stat": "81"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600002",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600005",
+          "stat": "0"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "passing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600001",
+          "stat": "181"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "school": "Alabama",
+    "categories": [
+     {
+      "name": "receiving",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600012",
+          "stat": "111"
+         },
+         {
+          "id": "cfb600013",
+          "stat": "23"
+         },
+         {
+          "id": "cfb600015",
+          "stat": "89"
+         },
+         {
+          "id": "cfb600016",
+          "stat": "90"
+         },
+         {
+          "id": "cfb600017",
+          "stat": "10"
+         },
+         {
+          "id": "cfb600018",
+          "stat": "69"
+         }
+        ]
+       },
+       {
+        "name": "REC",
+        "athletes": [
+         {
+          "id": "cfb600012",
+          "stat": "8"
+         },
+         {
+          "id": "cfb600013",
+          "stat": "6"
+         },
+         {
+          "id": "cfb600015",
+          "stat": "8"
+         },
+         {
+          "id": "cfb600016",
+          "stat": "8"
+         },
+         {
+          "id": "cfb600017",
+          "stat": "7"
+         },
+         {
+          "id": "cfb600018",
+          "stat": "4"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600012",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600013",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600015",
+          "stat": "2"
+         },
+         {
+          "id": "cfb600016",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600017",
+          "stat": "2"
+         },
+         {
+          "id": "cfb600018",
+          "stat": "1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "rushing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600011",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600014",
+          "stat": "93"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600011",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600014",
+          "stat": "1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "passing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600010",
+          "stat": "371"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5001,
+  "teams": [
+   {
+    "school": "Ohio State",
+    "categories": [
+     {
+      "name": "receiving",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600021",
+          "stat": "63"
+         },
+         {
+          "id": "cfb600022",
+          "stat": "171"
+         },
+         {
+          "id": "cfb600024",
+          "stat": "119"
+         },
+         {
+          "id": "cfb600025",
+          "stat": "110"
+         },
+         {
+          "id": "cfb600026",
+          "stat": "61"
+         },
+         {
+          "id": "cfb600027",
+          "stat": "59"
+         }
+        ]
+       },
+       {
+        "name": "REC",
+        "athletes": [
+         {
+          "id": "cfb600021",
+          "stat": "8"
+         },
+         {
+          "id": "cfb600022",
+          "stat": "9"
+         },
+         {
+          "id": "cfb600024",
+          "stat": "3"
+         },
+         {
+          "id": "cfb600025",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600026",
+          "stat": "6"
+         },
+         {
+          "id": "cfb600027",
+          "stat": "5"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600021",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600022",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600024",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600025",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600026",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600027",
+          "stat": "0"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "rushing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600020",
+          "stat": "82"
+         },
+         {
+          "id": "cfb600023",
+          "stat": "98"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600020",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600023",
+          "stat": "0"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "passing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600019",
+          "stat": "109"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "school": "Michigan",
+    "categories": [
+     {
+      "name": "receiving",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600030",
+          "stat": "76"
+         },
+         {
+          "id": "cfb600031",
+          "stat": "16"
+         },
+         {
+          "id": "cfb600033",
+          "stat": "67"
+         },
+         {
+          "id": "cfb600034",
+          "stat": "112"
+         },
+         {
+          "id": "cfb600035",
+          "stat": "91"
+         },
+         {
+          "id": "cfb600036",
+          "stat": "21"
+         }
+        ]
+       },
+       {
+        "name": "REC",
+        "athletes": [
+         {
+          "id": "cfb600030",
+          "stat": "9"
+         },
+         {
+          "id": "cfb600031",
+          "stat": "2"
+         },
+         {
+          "id": "cfb600033",
+          "stat": "5"
+         },
+         {
+          "id": "cfb600034",
+          "stat": "9"
+         },
+         {
+          "id": "cfb600035",
+          "stat": "8"
+         },
+         {
+          "id": "cfb600036",
+          "stat": "7"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600030",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600031",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600033",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600034",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600035",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600036",
+          "stat": "1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "rushing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600029",
+          "stat": "86"
+         },
+         {
+          "id": "cfb600032",
+          "stat": "119"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600029",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600032",
+          "stat": "1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "passing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600028",
+          "stat": "240"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5002,
+  "teams": [
+   {
+    "school": "Texas",
+    "categories": [
+     {
+      "name": "receiving",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600039",
+          "stat": "46"
+         },
+         {
+          "id": "cfb600040",
+          "stat": "77"
+         },
+         {
+          "id": "cfb600042",
+          "stat": "61"
+         },
+         {
+          "id": "cfb600043",
+          "stat": "69"
+         },
+         {
+          "id": "cfb600044",
+          "stat": "138"
+         },
+         {
+          "id": "cfb600045",
+          "stat": "122"
+         }
+        ]
+       },
+       {
+        "name": "REC",
+        "athletes": [
+         {
+          "id": "cfb600039",
+          "stat": "9"
+         },
+         {
+          "id": "cfb600040",
+          "stat": "9"
+         },
+         {
+          "id": "cfb600042",
+          "stat": "3"
+         },
+         {
+          "id": "cfb600043",
+          "stat": "6"
+         },
+         {
+          "id": "cfb600044",
+          "stat": "8"
+         },
+         {
+          "id": "cfb600045",
+          "stat": "5"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600039",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600040",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600042",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600043",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600044",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600045",
+          "stat": "1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "rushing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600038",
+          "stat": "125"
+         },
+         {
+          "id": "cfb600041",
+          "stat": "107"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600038",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600041",
+          "stat": "1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "passing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600037",
+          "stat": "98"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "school": "Oklahoma",
+    "categories": [
+     {
+      "name": "receiving",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600048",
+          "stat": "24"
+         },
+         {
+          "id": "cfb600049",
+          "stat": "67"
+         },
+         {
+          "id": "cfb600051",
+          "stat": "58"
+         },
+         {
+          "id": "cfb600052",
+          "stat": "60"
+         },
+         {
+          "id": "cfb600053",
+          "stat": "34"
+         },
+         {
+          "id": "cfb600054",
+          "stat": "30"
+         }
+        ]
+       },
+       {
+        "name": "REC",
+        "athletes": [
+         {
+          "id": "cfb600048",
+          "stat": "5"
+         },
+         {
+          "id": "cfb600049",
+          "stat": "5"
+         },
+         {
+          "id": "cfb600051",
+          "stat": "3"
+         },
+         {
+          "id": "cfb600052",
+          "stat": "5"
+         },
+         {
+          "id": "cfb600053",
+          "stat": "5"
+         },
+         {
+          "id": "cfb600054",
+          "stat": "4"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600048",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600049",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600051",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600052",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600053",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600054",
+          "stat": "0"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "rushing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600047",
+          "stat": "88"
+         },
+         {
+          "id": "cfb600050",
+          "stat": "84"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600047",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600050",
+          "stat": "1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "passing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600046",
+          "stat": "212"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5003,
+  "teams": [
+   {
+    "school": "Oregon",
+    "categories": [
+     {
+      "name": "receiving",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600057",
+          "stat": "103"
+         },
+         {
+          "id": "cfb600058",
+          "stat": "55"
+         },
+         {
+          "id": "cfb600060",
+          "stat": "9"
+         },
+         {
+          "id": "cfb600061",
+          "stat": "85"
+         },
+         {
+          "id": "cfb600062",
+          "stat": "2"
+         },
+         {
+          "id": "cfb600063",
+          "stat": "40"
+         }
+        ]
+       },
+       {
+        "name": "REC",
+        "athletes": [
+         {
+          "id": "cfb600057",
+          "stat": "2"
+         },
+         {
+          "id": "cfb600058",
+          "stat": "8"
+         },
+         {
+          "id": "cfb600060",
+          "stat": "6"
+         },
+         {
+          "id": "cfb600061",
+          "stat": "7"
+         },
+         {
+          "id": "cfb600062",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600063",
+          "stat": "8"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600057",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600058",
+          "stat": "2"
+         },
+         {
+          "id": "cfb600060",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600061",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600062",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600063",
+          "stat": "0"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "rushing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600056",
+          "stat": "22"
+         },
+         {
+          "id": "cfb600059",
+          "stat": "108"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600056",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600059",
+          "stat": "1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "passing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600055",
+          "stat": "332"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "school": "Washington",
+    "categories": [
+     {
+      "name": "receiving",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600066",
+          "stat": "93"
+         },
+         {
+          "id": "cfb600067",
+          "stat": "73"
+         },
+         {
+          "id": "cfb600069",
+          "stat": "71"
+         },
+         {
+          "id": "cfb600070",
+          "stat": "93"
+         },
+         {
+          "id": "cfb600071",
+          "stat": "32"
+         },
+         {
+          "id": "cfb600072",
+          "stat": "112"
+         }
+        ]
+       },
+       {
+        "name": "REC",
+        "athletes": [
+         {
+          "id": "cfb600066",
+          "stat": "8"
+         },
+         {
+          "id": "cfb600067",
+          "stat": "9"
+         },
+         {
+          "id": "cfb600069",
+          "stat": "2"
+         },
+         {
+          "id": "cfb600070",
+          "stat": "7"
+         },
+         {
+          "id": "cfb600071",
+          "stat": "7"
+         },
+         {
+          "id": "cfb600072",
+          "stat": "6"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600066",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600067",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600069",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600070",
+          "stat": "1"
+         },
+         {
+          "id": "cfb600071",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600072",
+          "stat": "0"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "rushing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600065",
+          "stat": "89"
+         },
+         {
+          "id": "cfb600068",
+          "stat": "95"
+         }
+        ]
+       },
+       {
+        "name": "TD",
+        "athletes": [
+         {
+          "id": "cfb600065",
+          "stat": "0"
+         },
+         {
+          "id": "cfb600068",
+          "stat": "1"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "name": "passing",
+      "types": [
+       {
+        "name": "YDS",
+        "athletes": [
+         {
+          "id": "cfb600064",
+          "stat": "365"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]

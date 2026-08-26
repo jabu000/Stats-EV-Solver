@@ -105,12 +105,37 @@ class CfbdProvider(Provider):
         return out
 
     # ----------------------------------------------------------- aggregation
+    def games_played_by_team(self, season: int) -> dict[str, int]:
+        """Completed games per team.
+
+        Teams do not all play the same number of games -- byes fall in different weeks,
+        and games get postponed -- so a single slate-wide constant misstates every
+        per-game rate it touches. Counting each team's own completed games is barely
+        more work and is right.
+        """
+        counts: dict[str, int] = {}
+        try:
+            games = self.team_games(season)
+        except ProviderError:
+            return counts
+
+        for game in games or []:
+            if not _is_completed(game):
+                continue
+            for key in ("home_team", "away_team", "homeTeam", "awayTeam"):
+                team = game.get(key)
+                if team:
+                    counts[str(team).upper()] = counts.get(str(team).upper(), 0) + 1
+        return counts
+
     def build_profiles(
         self, season: int, games_played: int = 8
     ) -> tuple[dict[str, FootballPlayerProfile], dict[str, FootballTeamContext]]:
         rows = self.season_player_stats(season)
         ratings = self.ratings(season)
-        return build_cfb_profiles(rows, games_played, ratings)
+        return build_cfb_profiles(
+            rows, games_played, ratings, self.games_played_by_team(season)
+        )
 
     def health_check(self) -> tuple[bool, str, str]:
         configured, why = self.is_configured()
@@ -127,10 +152,21 @@ class CfbdProvider(Provider):
 
 
 def build_cfb_profiles(
-    rows: list[dict], games_played: int, ratings: dict[str, float] | None = None
+    rows: list[dict],
+    games_played: int,
+    ratings: dict[str, float] | None = None,
+    games_by_team: dict[str, int] | None = None,
 ) -> tuple[dict[str, FootballPlayerProfile], dict[str, FootballTeamContext]]:
-    """Pivot CFBD's long-format season stats into profiles and team contexts."""
+    """Pivot CFBD's long-format season stats into profiles and team contexts.
+
+    `games_by_team` gives each team its own completed-game count; `games_played` is only
+    the fallback for teams the schedule feed did not cover.
+    """
     ratings = ratings or {}
+    games_by_team = games_by_team or {}
+
+    def team_games(team: str) -> int:
+        return max(1, games_by_team.get(team.upper(), games_played))
     league_priors = priors("CFB")
 
     per_player: dict[str, dict[str, Any]] = {}
@@ -161,7 +197,7 @@ def build_cfb_profiles(
                 "name": str(row.get("player") or "Unknown"),
                 "position": "WR",
                 "team": team,
-                "games": games_played,
+                "games": team_games(team),
                 **{f: 0.0 for f in _FIELDS},
                 "rec_yard_games": [], "rush_yard_games": [], "pass_yard_games": [],
             },
@@ -186,7 +222,7 @@ def build_cfb_profiles(
 
     contexts: dict[str, FootballTeamContext] = {}
     for team, totals in team_totals.items():
-        plays = (totals["attempts"] + totals["carries"]) / max(games_played, 1)
+        plays = (totals["attempts"] + totals["carries"]) / team_games(team)
         pass_rate = _derived_pass_rate(
             totals["attempts"], totals["carries"], league_priors["pass_rate"]
         )
@@ -198,6 +234,21 @@ def build_cfb_profiles(
             rating=ratings.get(team, 0.0),
         )
     return profiles, contexts
+
+
+def _is_completed(game: dict) -> bool:
+    """Whether a game has actually been played.
+
+    CFBD spells this several ways across endpoint versions; a scored game counts even
+    when no explicit completion flag is present.
+    """
+    for key in ("completed", "isCompleted"):
+        if key in game:
+            return bool(game[key])
+    for key in ("home_points", "homePoints"):
+        if game.get(key) is not None:
+            return True
+    return False
 
 
 def _infer_position(bucket: dict) -> str:

@@ -18,8 +18,14 @@ Markets tracked:
 ```bash
 make setup          # venv + backend deps + npm install
 make build          # build the frontend
-make seed           # optional: demo history so the Track Record tab has data
 make api            # http://127.0.0.1:8000
+```
+
+Or, to have it run itself — API always up, slates recorded and graded on a schedule:
+
+```bash
+make setup && make build
+make install-service
 ```
 
 For frontend work, `make dev` runs the Vite dev server on :5173 with the API proxied.
@@ -27,6 +33,64 @@ For frontend work, `make dev` runs the Vite dev server on :5173 with the API pro
 It starts in **fixture mode** against recorded sample slates, so it works with no
 network at all. To use real data, set `DATA_MODE=live` in `.env`, restart, and click
 **Test connections** in the Settings tab.
+
+`make seed` fills the Track Record tab with a demo graded history. It is useful for
+seeing what the tab looks like, but seeded picks are deliberately **excluded** from the
+hit rate, the ROI and the calibrator, so the numbers stay yours — pass
+`?include_demo=true` to see them counted. Skip it if an empty tab won't confuse you.
+
+Note that `make clean` removes `frontend/dist` as well as the database, so `make build`
+has to run again before `make api` serves anything but a 503.
+
+---
+
+## Daily workflow
+
+1. Open the league tab and find the bets you like.
+2. Press **Record slate**. *This is the step that publishes the board for grading.*
+3. Grade it — either let the scheduled job do it overnight, or press **Grade now** on
+   the Track Record tab once the games have finished.
+
+**Looking at a board records nothing.** Reads are read-only: you can refresh, switch
+leagues and re-sort as often as you like without polluting the track record. Only
+**Record slate** (or `make snapshot`) writes, and it is idempotent — recording the same
+slate five times leaves one row per pick, refreshing the stored closing line each time
+without touching the projection that was originally published.
+
+That is what makes closing-line value meaningful: the projection is frozen at the
+moment you recorded it, and the line keeps moving.
+
+---
+
+## Running it in the background
+
+```bash
+make install-service     # launchd on macOS, systemd --user on Linux
+make service-status
+make uninstall-service
+```
+
+This installs two things: the API, kept alive and restarted if it dies, and a job
+schedule:
+
+| When | What |
+|---|---|
+| 09:00, 13:00, 16:00 | `snapshot` — record each league's slate |
+| 18:30 | `snapshot` + `grade` — late slate, then settle whatever finished |
+
+Snapshotting several times a day is deliberate: the earlier board is the one with an
+edge, and keeping it means the closing line has something to be compared against.
+Grading skips anything already settled, so nothing double-counts.
+
+Logs land in `data/logs/jobs.log` and `data/logs/api.log`, truncated at 5 MB so an
+always-on service can't fill a disk.
+
+On Linux the units are installed for your user, which means they stop when you log out.
+`sudo loginctl enable-linger $USER` keeps them running.
+
+The scripts are plain files in `ops/` — `install-service.sh` writes the unit and
+`run-jobs.sh` is what actually runs, so you can read them before trusting them, or call
+`./ops/run-jobs.sh both` by hand.
 
 ---
 
@@ -161,13 +225,33 @@ the UI explicitly labels probabilities as uncalibrated. The calibrator:
 - interpolates between block centroids instead of stepping, preserving the model's
   ordering — which is the part most likely to be right.
 
-Grade picks by posting actuals:
+### Grading
+
+Grading is automatic. **Grade now** in the UI, or `make grade`, fetches actual results
+and settles every pick that has one:
+
+| League | Result source | Notes |
+|---|---|---|
+| MLB | StatsAPI `stats?stats=byDateRange` | two requests per day, hitters and pitchers |
+| NFL | nflverse weekly player stats | anytime TD sums rushing **and** receiving |
+| CFB | CollegeFootballData `/games/players` | free key required |
+
+Football results are indexed by week, not date, so the grader **infers the week from
+the date** and reports the week it used in the response. Pass an explicit `week` to
+override it.
 
 ```bash
-curl -X POST localhost:8000/api/track-record/grade \
-  -H 'Content-Type: application/json' \
-  -d '{"results":[{"player_key":"12345","market":"strikeouts","actual":7}]}'
+make snapshot   # record the current slate for every league
+make grade      # settle yesterday's picks
+make status     # pending count, hit rate, expected hit rate, ROI, Brier
+make check      # is every upstream provider answering?
 ```
+
+`GET /api/track-record/pending` lists what is recorded but unsettled — that count is
+the badge on the Track Record tab. `POST /api/track-record/grade/auto` with no date
+grades **every** date that has pending picks, not just yesterday, so a service that was
+offline for a week catches up in one call. Posting actuals by hand still works via
+`POST /api/track-record/grade` when a result feed is down.
 
 ---
 
@@ -222,8 +306,10 @@ backend/app/
   features/    context.py is the provider↔model contract; mlb.py, football.py
   models/      distributions.py + one module per market + calibration.py
   pricing/     edge.py, entry.py, correlation.py
-  grading/     grader.py
+  grading/     grader.py (settlement, track record), results.py (actual results)
+  cli.py       snapshot / grade / status / check / serve, for the scheduler
 frontend/src/  App.tsx (5-tab shell), components/, pages/
+ops/           install-service.sh (launchd/systemd), run-jobs.sh
 ```
 
 Nothing in `models/` imports a provider and nothing in `providers/` imports a model, so
@@ -238,7 +324,7 @@ board — with lower confidence, visible warnings, and the unresolved names surf
 ## Testing
 
 ```bash
-make test     # 157 tests
+make test     # 195 tests
 ```
 
 Coverage worth knowing about: the Poisson-binomial is checked against brute-force
@@ -247,6 +333,15 @@ break-even probabilities are verified to actually break even by round-tripping t
 the entry pricer; the per-leg EV identity is checked against simulated entries; and
 every model is tested for directional correctness (platoon advantage, game script, wind,
 park, lineup slot, talent gap) and monotonicity in the line.
+
+The recording and grading path is tested against the behaviours that make a track
+record trustworthy rather than merely present: that reading a board writes nothing;
+that recording the same slate twice leaves one row per pick; that a re-record refreshes
+the closing line *without* rewriting the published projection; that the same slate
+prices identically in a fresh process (a per-process Monte-Carlo seed used to flip
+coin-flip bets and duplicate them); that anytime-TD grading counts rushing and receiving
+scores; that football week inference is reported rather than silent; and that demo seed
+data stays out of both the calibrator and the headline numbers.
 
 ---
 
@@ -260,11 +355,12 @@ Read this part.
    captured production responses. Player and team names are real (name resolution can't
    be tested against invented names); the statistics attached to them are invented and
    are nobody's actual performance record.
-2. **Live mode is unverified by me.** The code paths are written against the documented
+2. **Live mode is unverified by me.** The code paths — the line and stats providers and
+   the three result fetchers that grading depends on — are written against the documented
    response shapes and exercised end to end offline, but no live request was ever made
-   from the build environment. Run **Test connections** in Settings on first use — it
-   reports each provider individually so a failure is immediately obvious rather than
-   showing up as a mysteriously thin board.
+   from the build environment. Run **Test connections** in Settings (or `make check`) on
+   first use: it reports each provider individually, so a failure is immediately obvious
+   rather than showing up as a mysteriously thin board or a stuck pending count.
 3. **The demo board's edges are larger than real ones.** The fixture's "market" is a
    noisy line-setter placed near each projection, not a real book defending its
    position. Real edges are a few percentage points. The 1+ Hit market shows large edges
@@ -272,12 +368,18 @@ Read this part.
 4. **Probabilities are uncalibrated until you have history.** The UI says so explicitly.
    Treat early numbers as rankings, not as probabilities.
 5. **CFB is weaker than NFL.** CFBD carries no target counts (receptions stand in) and no
-   red-zone splits, and college samples are small with enormous talent gaps.
+   red-zone splits, and college samples are small with enormous talent gaps. Games played
+   is now derived per team from the schedule, so byes no longer inflate per-game rates —
+   but if the schedule feed is unavailable it falls back to a season-wide estimate.
 6. **Red-zone share is inferred from touchdown history**, not snap-level goal-line data.
    It's the noisiest input in the anytime-TD model and is flagged as such in the drawer.
 7. **Correlation is flagged, not modelled.** Entry EV assumes independent legs, which is
    optimistic for positively-correlated slips.
-8. **The model may systematically favour "lower".** Yardage markets are right-skewed, so
+8. **Football grading infers the week from the date.** A pick recorded on an unusual
+   date — an international game, a rescheduled game, a Week 18 Saturday — can be looked
+   up against the wrong week and come back ungraded. The response names the week it
+   used, and an explicit `week` overrides it.
+9. **The model may systematically favour "lower".** Yardage markets are right-skewed, so
    if a book sets its line at the median rather than the mean, this model will lean under
    more than it should. The track record is how you find out — watch hit rate against
    expected hit rate per market before trusting it with money.

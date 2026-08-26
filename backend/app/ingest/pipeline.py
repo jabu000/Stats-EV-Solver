@@ -167,7 +167,9 @@ class BoardBuilder:
                 batter, game = entry
                 output = project_hits(line.stat_line, batter, game)
 
-            bets.extend(self._price(line, output, mode, match.score))
+            bets.extend(
+                self._price(line, output, mode, match.score, match.canonical_id or "")
+            )
         return bets
 
     def _mlb_contexts(self, on: date) -> list[MlbGameContext]:
@@ -232,7 +234,12 @@ class BoardBuilder:
                 league, line, player, teams, odds, weather_provider, game_cache
             )
             output = project_football(line.market, line.stat_line, player, game)
-            bets.extend(self._price(line, output, mode, match.score, position=player.position))
+            bets.extend(
+                self._price(
+                    line, output, mode, match.score, match.canonical_id or "",
+                    position=player.position,
+                )
+            )
         return bets
 
     def _football_profiles(
@@ -312,6 +319,7 @@ class BoardBuilder:
         output: ModelOutput,
         mode: str,
         match_score: float,
+        canonical_id: str,
         position: str | None = None,
     ) -> list[PricedBet]:
         """Price the side the model actually prefers.
@@ -360,7 +368,10 @@ class BoardBuilder:
                 league=line.league,
                 market=line.market,
                 underdog_line_id=line.line_id,
-                player_key=line.player_id or line.player_name,
+                # The canonical *stats-provider* id, not Underdog's. Results feeds are
+                # keyed by MLB StatsAPI / nflverse / CFBD ids, so storing Underdog's id
+                # here would leave graded picks impossible to join to actual outcomes.
+                player_key=canonical_id,
                 player_name=line.player_name,
                 position=position or line.position,
                 team=line.team,

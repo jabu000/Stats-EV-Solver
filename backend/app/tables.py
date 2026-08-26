@@ -125,6 +125,14 @@ class ProjectionRow(Base):
     __table_args__ = (
         Index("ix_projection_grading", "league", "market", "graded_at"),
         Index("ix_projection_event", "event_date", "player_key"),
+        # One row per side of a line per game date. Recording a slate repeatedly through
+        # the day is normal and useful -- it is how closing-line value gets captured --
+        # but it must update that one row, never append another. Enforced here rather
+        # than left to the caller, because a duplicate silently multiplies the pick in
+        # every track-record statistic.
+        UniqueConstraint(
+            "underdog_line_id", "side", "event_date", name="uq_projection_identity"
+        ),
     )
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)

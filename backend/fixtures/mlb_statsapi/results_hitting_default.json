@@ -1,0 +1,1196 @@
+{
+ "stats": [
+  {
+   "splits": [
+    {
+     "player": {
+      "id": 600001,
+      "fullName": "Aaron Judge"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 5,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600002,
+      "fullName": "Juan Soto"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600003,
+      "fullName": "Anthony Volpe"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600004,
+      "fullName": "Jazz Chisholm Jr."
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 5,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600005,
+      "fullName": "Austin Wells"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 4,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600006,
+      "fullName": "Ben Rice"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 4,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600007,
+      "fullName": "Trent Grisham"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 5,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600008,
+      "fullName": "Oswaldo Cabrera"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 4,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600009,
+      "fullName": "Anthony Rizzo"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600010,
+      "fullName": "Jarren Duran"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 4,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600011,
+      "fullName": "Rafael Devers"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600012,
+      "fullName": "Trevor Story"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600013,
+      "fullName": "Wilyer Abreu"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600014,
+      "fullName": "Triston Casas"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 3,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600015,
+      "fullName": "Ceddanne Rafaela"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600016,
+      "fullName": "Connor Wong"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600017,
+      "fullName": "Masataka Yoshida"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 4,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600018,
+      "fullName": "David Hamilton"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600021,
+      "fullName": "Shohei Ohtani"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600022,
+      "fullName": "Mookie Betts"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600023,
+      "fullName": "Freddie Freeman"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600024,
+      "fullName": "Teoscar Hernandez"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600025,
+      "fullName": "Max Muncy"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 4,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600026,
+      "fullName": "Will Smith"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 4,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600027,
+      "fullName": "Tommy Edman"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 5,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600028,
+      "fullName": "Andy Pages"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600029,
+      "fullName": "Gavin Lux"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 5,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600030,
+      "fullName": "Fernando Tatis Jr."
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600031,
+      "fullName": "Luis Arraez"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600032,
+      "fullName": "Manny Machado"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600033,
+      "fullName": "Jackson Merrill"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600034,
+      "fullName": "Xander Bogaerts"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 4,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600035,
+      "fullName": "Jake Cronenworth"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600036,
+      "fullName": "Kyle Higashioka"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600037,
+      "fullName": "Jurickson Profar"
+     },
+     "stat": {
+      "hits": 3,
+      "plateAppearances": 5,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600038,
+      "fullName": "Bryce Johnson"
+     },
+     "stat": {
+      "hits": 3,
+      "plateAppearances": 5,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600041,
+      "fullName": "Ronald Acuna Jr."
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600042,
+      "fullName": "Ozzie Albies"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600043,
+      "fullName": "Austin Riley"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600044,
+      "fullName": "Matt Olson"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600045,
+      "fullName": "Marcell Ozuna"
+     },
+     "stat": {
+      "hits": 3,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600046,
+      "fullName": "Michael Harris II"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 3,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600047,
+      "fullName": "Sean Murphy"
+     },
+     "stat": {
+      "hits": 3,
+      "plateAppearances": 5,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600048,
+      "fullName": "Orlando Arcia"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600049,
+      "fullName": "Jarred Kelenic"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600050,
+      "fullName": "Kyle Schwarber"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 4,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600051,
+      "fullName": "Trea Turner"
+     },
+     "stat": {
+      "hits": 3,
+      "plateAppearances": 5,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600052,
+      "fullName": "Bryce Harper"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 5,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600053,
+      "fullName": "Alec Bohm"
+     },
+     "stat": {
+      "hits": 3,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600054,
+      "fullName": "Nick Castellanos"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600055,
+      "fullName": "J.T. Realmuto"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600056,
+      "fullName": "Brandon Marsh"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600057,
+      "fullName": "Bryson Stott"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600058,
+      "fullName": "Johan Rojas"
+     },
+     "stat": {
+      "hits": 3,
+      "plateAppearances": 3,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600061,
+      "fullName": "Jose Altuve"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600062,
+      "fullName": "Yordan Alvarez"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600063,
+      "fullName": "Alex Bregman"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600064,
+      "fullName": "Kyle Tucker"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600065,
+      "fullName": "Jeremy Pena"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600066,
+      "fullName": "Yainer Diaz"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600067,
+      "fullName": "Chas McCormick"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 4,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600068,
+      "fullName": "Jake Meyers"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600069,
+      "fullName": "Mauricio Dubon"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600070,
+      "fullName": "Julio Rodriguez"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 4,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600071,
+      "fullName": "Cal Raleigh"
+     },
+     "stat": {
+      "hits": 3,
+      "plateAppearances": 4,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600072,
+      "fullName": "Randy Arozarena"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 5,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600073,
+      "fullName": "J.P. Crawford"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600074,
+      "fullName": "Luke Raley"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600075,
+      "fullName": "Mitch Garver"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600076,
+      "fullName": "Dylan Moore"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600077,
+      "fullName": "Victor Robles"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 5,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600078,
+      "fullName": "Josh Rojas"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600081,
+      "fullName": "Ian Happ"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600082,
+      "fullName": "Seiya Suzuki"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600083,
+      "fullName": "Dansby Swanson"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 3,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600084,
+      "fullName": "Nico Hoerner"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600085,
+      "fullName": "Michael Busch"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600086,
+      "fullName": "Pete Crow-Armstrong"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600087,
+      "fullName": "Miguel Amaya"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 4,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600088,
+      "fullName": "Isaac Paredes"
+     },
+     "stat": {
+      "hits": 4,
+      "plateAppearances": 4,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600089,
+      "fullName": "Nick Madrigal"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 4,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600090,
+      "fullName": "Christian Yelich"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600091,
+      "fullName": "William Contreras"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 4,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600092,
+      "fullName": "Willy Adames"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 5,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600093,
+      "fullName": "Jackson Chourio"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600094,
+      "fullName": "Rhys Hoskins"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600095,
+      "fullName": "Sal Frelick"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600096,
+      "fullName": "Brice Turang"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600097,
+      "fullName": "Joey Ortiz"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600098,
+      "fullName": "Garrett Mitchell"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600101,
+      "fullName": "Brenton Doyle"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 5,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600102,
+      "fullName": "Ezequiel Tovar"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 5,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600103,
+      "fullName": "Ryan McMahon"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600104,
+      "fullName": "Kris Bryant"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600105,
+      "fullName": "Michael Toglia"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600106,
+      "fullName": "Nolan Jones"
+     },
+     "stat": {
+      "hits": 3,
+      "plateAppearances": 5,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600107,
+      "fullName": "Elias Diaz"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600108,
+      "fullName": "Jordan Beck"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 5,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600109,
+      "fullName": "Hunter Goodman"
+     },
+     "stat": {
+      "hits": 2,
+      "plateAppearances": 5,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600110,
+      "fullName": "Ketel Marte"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600111,
+      "fullName": "Corbin Carroll"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600112,
+      "fullName": "Christian Walker"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 3,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600113,
+      "fullName": "Eugenio Suarez"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 1
+     }
+    },
+    {
+     "player": {
+      "id": 600114,
+      "fullName": "Lourdes Gurriel Jr."
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 0
+     }
+    },
+    {
+     "player": {
+      "id": 600115,
+      "fullName": "Gabriel Moreno"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 4,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600116,
+      "fullName": "Alek Thomas"
+     },
+     "stat": {
+      "hits": 1,
+      "plateAppearances": 5,
+      "strikeOuts": 3
+     }
+    },
+    {
+     "player": {
+      "id": 600117,
+      "fullName": "Geraldo Perdomo"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 3,
+      "strikeOuts": 2
+     }
+    },
+    {
+     "player": {
+      "id": 600118,
+      "fullName": "Jake McCarthy"
+     },
+     "stat": {
+      "hits": 0,
+      "plateAppearances": 5,
+      "strikeOuts": 2
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,4 +1,5 @@
-.PHONY: help setup dev api web build test fixtures seed clean
+.PHONY: help setup dev api web build test fixtures seed clean \
+        snapshot grade status check install-service uninstall-service service-status
 
 help:
 	@echo "make setup     - create the venv and install backend + frontend deps"
@@ -10,6 +11,15 @@ help:
 	@echo "make fixtures  - regenerate the offline sample slates"
 	@echo "make seed      - seed a demo graded history for the Track Record tab"
 	@echo "make clean     - remove the local database and build output"
+	@echo ""
+	@echo "make snapshot  - record the current slate for later grading"
+	@echo "make grade     - settle yesterday's picks against real results"
+	@echo "make status    - print current track-record state"
+	@echo "make check     - test every upstream data provider"
+	@echo ""
+	@echo "make install-service   - run the API in the background + schedule the jobs"
+	@echo "make service-status    - is it running?"
+	@echo "make uninstall-service - remove it"
 
 PY := .venv/bin/python
 PIP := .venv/bin/pip
@@ -44,6 +54,27 @@ fixtures:
 
 seed:
 	PYTHONPATH=backend $(PY) backend/fixtures/seed_history.py
+
+snapshot:
+	PYTHONPATH=backend $(PY) -m app.cli snapshot
+
+grade:
+	PYTHONPATH=backend $(PY) -m app.cli grade
+
+status:
+	PYTHONPATH=backend $(PY) -m app.cli status
+
+check:
+	PYTHONPATH=backend $(PY) -m app.cli check
+
+install-service:
+	./ops/install-service.sh install
+
+uninstall-service:
+	./ops/install-service.sh uninstall
+
+service-status:
+	./ops/install-service.sh status
 
 clean:
 	rm -f data/solver.db
