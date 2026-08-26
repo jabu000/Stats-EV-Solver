@@ -1,0 +1,172 @@
+{
+ "events": [
+  {
+   "id": "200",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "NYY"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "BOS"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 7.0,
+       "spread": -1.0,
+       "details": "NYY -1.0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "201",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "LAD"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "SD"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 10.0,
+       "spread": 1.0,
+       "details": "SD -1.0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "202",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "ATL"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "PHI"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 11.5,
+       "spread": -0.5,
+       "details": "ATL -0.5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "203",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "HOU"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "SEA"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 7.5,
+       "spread": -1.5,
+       "details": "HOU -1.5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "204",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "CHC"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "MIL"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 8.5,
+       "spread": 1.5,
+       "details": "MIL -1.5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "205",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "COL"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "ARI"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 11.0,
+       "spread": -0.5,
+       "details": "COL -0.5"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

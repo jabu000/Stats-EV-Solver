@@ -1,0 +1,140 @@
+{
+ "stats": [
+  {
+   "splits": [
+    {
+     "player": {
+      "id": 600019,
+      "fullName": "Gerrit Cole"
+     },
+     "stat": {
+      "battersFaced": 307,
+      "strikeOuts": 85,
+      "hits": 78
+     }
+    },
+    {
+     "player": {
+      "id": 600020,
+      "fullName": "Garrett Crochet"
+     },
+     "stat": {
+      "battersFaced": 234,
+      "strikeOuts": 43,
+      "hits": 59
+     }
+    },
+    {
+     "player": {
+      "id": 600039,
+      "fullName": "Yoshinobu Yamamoto"
+     },
+     "stat": {
+      "battersFaced": 228,
+      "strikeOuts": 55,
+      "hits": 52
+     }
+    },
+    {
+     "player": {
+      "id": 600040,
+      "fullName": "Dylan Cease"
+     },
+     "stat": {
+      "battersFaced": 331,
+      "strikeOuts": 65,
+      "hits": 70
+     }
+    },
+    {
+     "player": {
+      "id": 600059,
+      "fullName": "Chris Sale"
+     },
+     "stat": {
+      "battersFaced": 178,
+      "strikeOuts": 48,
+      "hits": 39
+     }
+    },
+    {
+     "player": {
+      "id": 600060,
+      "fullName": "Zack Wheeler"
+     },
+     "stat": {
+      "battersFaced": 211,
+      "strikeOuts": 35,
+      "hits": 41
+     }
+    },
+    {
+     "player": {
+      "id": 600079,
+      "fullName": "Framber Valdez"
+     },
+     "stat": {
+      "battersFaced": 418,
+      "strikeOuts": 115,
+      "hits": 105
+     }
+    },
+    {
+     "player": {
+      "id": 600080,
+      "fullName": "Logan Gilbert"
+     },
+     "stat": {
+      "battersFaced": 190,
+      "strikeOuts": 50,
+      "hits": 35
+     }
+    },
+    {
+     "player": {
+      "id": 600099,
+      "fullName": "Shota Imanaga"
+     },
+     "stat": {
+      "battersFaced": 315,
+      "strikeOuts": 78,
+      "hits": 56
+     }
+    },
+    {
+     "player": {
+      "id": 600100,
+      "fullName": "Freddy Peralta"
+     },
+     "stat": {
+      "battersFaced": 277,
+      "strikeOuts": 56,
+      "hits": 51
+     }
+    },
+    {
+     "player": {
+      "id": 600119,
+      "fullName": "Kyle Freeland"
+     },
+     "stat": {
+      "battersFaced": 308,
+      "strikeOuts": 70,
+      "hits": 64
+     }
+    },
+    {
+     "player": {
+      "id": 600120,
+      "fullName": "Zac Gallen"
+     },
+     "stat": {
+      "battersFaced": 282,
+      "strikeOuts": 58,
+      "hits": 62
+     }
+    }
+   ]
+  }
+ ]
+}

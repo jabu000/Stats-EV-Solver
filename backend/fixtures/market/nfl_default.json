@@ -1,0 +1,228 @@
+{
+ "events": [
+  {
+   "id": "100",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "KC"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "BUF"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 50.5,
+       "spread": -0.5,
+       "details": "KC -0.5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "101",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "PHI"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "DAL"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 45.5,
+       "spread": 0.5,
+       "details": "DAL -0.5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "102",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "SF"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "SEA"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 46.5,
+       "spread": 0.5,
+       "details": "SEA -0.5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "103",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "DET"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "GB"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 44.0,
+       "spread": 5.0,
+       "details": "GB -5.0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "104",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "BAL"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "CIN"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 39.5,
+       "spread": 5.0,
+       "details": "CIN -5.0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "105",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "MIA"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "NYJ"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 39.5,
+       "spread": 1.5,
+       "details": "NYJ -1.5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "106",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "HOU"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "IND"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 45.0,
+       "spread": -5.5,
+       "details": "HOU -5.5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "107",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "LAR"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "TB"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 40.5,
+       "spread": -0.5,
+       "details": "LAR -0.5"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+[
+ {
+  "team": "Georgia",
+  "rating": 28.4
+ },
+ {
+  "team": "Alabama",
+  "rating": -0.0
+ },
+ {
+  "team": "Ohio State",
+  "rating": 18.7
+ },
+ {
+  "team": "Michigan",
+  "rating": 4.8
+ },
+ {
+  "team": "Texas",
+  "rating": 27.7
+ },
+ {
+  "team": "Oklahoma",
+  "rating": 11.2
+ },
+ {
+  "team": "Oregon",
+  "rating": 5.3
+ },
+ {
+  "team": "Washington",
+  "rating": 5.5
+ }
+]

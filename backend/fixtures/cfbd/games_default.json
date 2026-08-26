@@ -1,0 +1,22 @@
+[
+ {
+  "id": 4000,
+  "home_team": "Georgia",
+  "away_team": "Alabama"
+ },
+ {
+  "id": 4001,
+  "home_team": "Ohio State",
+  "away_team": "Michigan"
+ },
+ {
+  "id": 4002,
+  "home_team": "Texas",
+  "away_team": "Oklahoma"
+ },
+ {
+  "id": 4003,
+  "home_team": "Oregon",
+  "away_team": "Washington"
+ }
+]

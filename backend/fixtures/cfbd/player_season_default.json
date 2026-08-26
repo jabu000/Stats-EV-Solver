@@ -1,0 +1,2178 @@
+[
+ {
+  "playerId": "cfb600001",
+  "player": "Carson Beck",
+  "team": "Georgia",
+  "category": "passing",
+  "statType": "ATT",
+  "stat": 285
+ },
+ {
+  "playerId": "cfb600001",
+  "player": "Carson Beck",
+  "team": "Georgia",
+  "category": "passing",
+  "statType": "YDS",
+  "stat": 2587.4
+ },
+ {
+  "playerId": "cfb600001",
+  "player": "Carson Beck",
+  "team": "Georgia",
+  "category": "passing",
+  "statType": "TD",
+  "stat": 14
+ },
+ {
+  "playerId": "cfb600001",
+  "player": "Carson Beck",
+  "team": "Georgia",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 101
+ },
+ {
+  "playerId": "cfb600001",
+  "player": "Carson Beck",
+  "team": "Georgia",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 135.6
+ },
+ {
+  "playerId": "cfb600001",
+  "player": "Carson Beck",
+  "team": "Georgia",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 8
+ },
+ {
+  "playerId": "cfb600002",
+  "player": "Trevor Etienne",
+  "team": "Georgia",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 223
+ },
+ {
+  "playerId": "cfb600002",
+  "player": "Trevor Etienne",
+  "team": "Georgia",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 1304.2
+ },
+ {
+  "playerId": "cfb600002",
+  "player": "Trevor Etienne",
+  "team": "Georgia",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 12
+ },
+ {
+  "playerId": "cfb600002",
+  "player": "Trevor Etienne",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 19
+ },
+ {
+  "playerId": "cfb600002",
+  "player": "Trevor Etienne",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 107
+ },
+ {
+  "playerId": "cfb600003",
+  "player": "Arian Smith",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 57
+ },
+ {
+  "playerId": "cfb600003",
+  "player": "Arian Smith",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 798.2
+ },
+ {
+  "playerId": "cfb600003",
+  "player": "Arian Smith",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 4
+ },
+ {
+  "playerId": "cfb600004",
+  "player": "Dominic Lovett",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 49
+ },
+ {
+  "playerId": "cfb600004",
+  "player": "Dominic Lovett",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 773.9
+ },
+ {
+  "playerId": "cfb600004",
+  "player": "Dominic Lovett",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 12
+ },
+ {
+  "playerId": "cfb600005",
+  "player": "Georgia RB2",
+  "team": "Georgia",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 199
+ },
+ {
+  "playerId": "cfb600005",
+  "player": "Georgia RB2",
+  "team": "Georgia",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 1012.5
+ },
+ {
+  "playerId": "cfb600005",
+  "player": "Georgia RB2",
+  "team": "Georgia",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 7
+ },
+ {
+  "playerId": "cfb600005",
+  "player": "Georgia RB2",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 12
+ },
+ {
+  "playerId": "cfb600005",
+  "player": "Georgia RB2",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 183
+ },
+ {
+  "playerId": "cfb600006",
+  "player": "Georgia WR3",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 70
+ },
+ {
+  "playerId": "cfb600006",
+  "player": "Georgia WR3",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 923.2
+ },
+ {
+  "playerId": "cfb600006",
+  "player": "Georgia WR3",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 3
+ },
+ {
+  "playerId": "cfb600007",
+  "player": "Georgia WR4",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 30
+ },
+ {
+  "playerId": "cfb600007",
+  "player": "Georgia WR4",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 423.6
+ },
+ {
+  "playerId": "cfb600007",
+  "player": "Georgia WR4",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 2
+ },
+ {
+  "playerId": "cfb600008",
+  "player": "Georgia TE1",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 61
+ },
+ {
+  "playerId": "cfb600008",
+  "player": "Georgia TE1",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 776.0
+ },
+ {
+  "playerId": "cfb600008",
+  "player": "Georgia TE1",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 8
+ },
+ {
+  "playerId": "cfb600009",
+  "player": "Georgia TE2",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 25
+ },
+ {
+  "playerId": "cfb600009",
+  "player": "Georgia TE2",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 322.9
+ },
+ {
+  "playerId": "cfb600009",
+  "player": "Georgia TE2",
+  "team": "Georgia",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 11
+ },
+ {
+  "playerId": "cfb600010",
+  "player": "Jalen Milroe",
+  "team": "Alabama",
+  "category": "passing",
+  "statType": "ATT",
+  "stat": 226
+ },
+ {
+  "playerId": "cfb600010",
+  "player": "Jalen Milroe",
+  "team": "Alabama",
+  "category": "passing",
+  "statType": "YDS",
+  "stat": 1890.3
+ },
+ {
+  "playerId": "cfb600010",
+  "player": "Jalen Milroe",
+  "team": "Alabama",
+  "category": "passing",
+  "statType": "TD",
+  "stat": 18
+ },
+ {
+  "playerId": "cfb600010",
+  "player": "Jalen Milroe",
+  "team": "Alabama",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 97
+ },
+ {
+  "playerId": "cfb600010",
+  "player": "Jalen Milroe",
+  "team": "Alabama",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 543.4
+ },
+ {
+  "playerId": "cfb600010",
+  "player": "Jalen Milroe",
+  "team": "Alabama",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 7
+ },
+ {
+  "playerId": "cfb600011",
+  "player": "Justice Haynes",
+  "team": "Alabama",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 161
+ },
+ {
+  "playerId": "cfb600011",
+  "player": "Justice Haynes",
+  "team": "Alabama",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 849.2
+ },
+ {
+  "playerId": "cfb600011",
+  "player": "Justice Haynes",
+  "team": "Alabama",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 10
+ },
+ {
+  "playerId": "cfb600011",
+  "player": "Justice Haynes",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 11
+ },
+ {
+  "playerId": "cfb600011",
+  "player": "Justice Haynes",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 170
+ },
+ {
+  "playerId": "cfb600012",
+  "player": "Ryan Williams",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 55
+ },
+ {
+  "playerId": "cfb600012",
+  "player": "Ryan Williams",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 839.9
+ },
+ {
+  "playerId": "cfb600012",
+  "player": "Ryan Williams",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 11
+ },
+ {
+  "playerId": "cfb600013",
+  "player": "Germie Bernard",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 89
+ },
+ {
+  "playerId": "cfb600013",
+  "player": "Germie Bernard",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 1175.1
+ },
+ {
+  "playerId": "cfb600013",
+  "player": "Germie Bernard",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 7
+ },
+ {
+  "playerId": "cfb600014",
+  "player": "Alabama RB2",
+  "team": "Alabama",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 144
+ },
+ {
+  "playerId": "cfb600014",
+  "player": "Alabama RB2",
+  "team": "Alabama",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 633.7
+ },
+ {
+  "playerId": "cfb600014",
+  "player": "Alabama RB2",
+  "team": "Alabama",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 14
+ },
+ {
+  "playerId": "cfb600014",
+  "player": "Alabama RB2",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 19
+ },
+ {
+  "playerId": "cfb600014",
+  "player": "Alabama RB2",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 105
+ },
+ {
+  "playerId": "cfb600015",
+  "player": "Alabama WR3",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 35
+ },
+ {
+  "playerId": "cfb600015",
+  "player": "Alabama WR3",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 459.6
+ },
+ {
+  "playerId": "cfb600015",
+  "player": "Alabama WR3",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 5
+ },
+ {
+  "playerId": "cfb600016",
+  "player": "Alabama WR4",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 31
+ },
+ {
+  "playerId": "cfb600016",
+  "player": "Alabama WR4",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 427.1
+ },
+ {
+  "playerId": "cfb600016",
+  "player": "Alabama WR4",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 5
+ },
+ {
+  "playerId": "cfb600017",
+  "player": "Alabama TE1",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 57
+ },
+ {
+  "playerId": "cfb600017",
+  "player": "Alabama TE1",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 732.4
+ },
+ {
+  "playerId": "cfb600017",
+  "player": "Alabama TE1",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 10
+ },
+ {
+  "playerId": "cfb600018",
+  "player": "Alabama TE2",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 54
+ },
+ {
+  "playerId": "cfb600018",
+  "player": "Alabama TE2",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 690.0
+ },
+ {
+  "playerId": "cfb600018",
+  "player": "Alabama TE2",
+  "team": "Alabama",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 6
+ },
+ {
+  "playerId": "cfb600019",
+  "player": "Will Howard",
+  "team": "Ohio State",
+  "category": "passing",
+  "statType": "ATT",
+  "stat": 309
+ },
+ {
+  "playerId": "cfb600019",
+  "player": "Will Howard",
+  "team": "Ohio State",
+  "category": "passing",
+  "statType": "YDS",
+  "stat": 2688.1
+ },
+ {
+  "playerId": "cfb600019",
+  "player": "Will Howard",
+  "team": "Ohio State",
+  "category": "passing",
+  "statType": "TD",
+  "stat": 22
+ },
+ {
+  "playerId": "cfb600019",
+  "player": "Will Howard",
+  "team": "Ohio State",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 100
+ },
+ {
+  "playerId": "cfb600019",
+  "player": "Will Howard",
+  "team": "Ohio State",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 132.0
+ },
+ {
+  "playerId": "cfb600019",
+  "player": "Will Howard",
+  "team": "Ohio State",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 8
+ },
+ {
+  "playerId": "cfb600020",
+  "player": "TreVeyon Henderson",
+  "team": "Ohio State",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 128
+ },
+ {
+  "playerId": "cfb600020",
+  "player": "TreVeyon Henderson",
+  "team": "Ohio State",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 756.9
+ },
+ {
+  "playerId": "cfb600020",
+  "player": "TreVeyon Henderson",
+  "team": "Ohio State",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 15
+ },
+ {
+  "playerId": "cfb600020",
+  "player": "TreVeyon Henderson",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 22
+ },
+ {
+  "playerId": "cfb600020",
+  "player": "TreVeyon Henderson",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 73
+ },
+ {
+  "playerId": "cfb600021",
+  "player": "Emeka Egbuka",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 38
+ },
+ {
+  "playerId": "cfb600021",
+  "player": "Emeka Egbuka",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 630.4
+ },
+ {
+  "playerId": "cfb600021",
+  "player": "Emeka Egbuka",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 11
+ },
+ {
+  "playerId": "cfb600022",
+  "player": "Jeremiah Smith",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 35
+ },
+ {
+  "playerId": "cfb600022",
+  "player": "Jeremiah Smith",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 418.7
+ },
+ {
+  "playerId": "cfb600022",
+  "player": "Jeremiah Smith",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 8
+ },
+ {
+  "playerId": "cfb600023",
+  "player": "Ohio State RB2",
+  "team": "Ohio State",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 125
+ },
+ {
+  "playerId": "cfb600023",
+  "player": "Ohio State RB2",
+  "team": "Ohio State",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 681.4
+ },
+ {
+  "playerId": "cfb600023",
+  "player": "Ohio State RB2",
+  "team": "Ohio State",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 9
+ },
+ {
+  "playerId": "cfb600023",
+  "player": "Ohio State RB2",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 12
+ },
+ {
+  "playerId": "cfb600023",
+  "player": "Ohio State RB2",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 234
+ },
+ {
+  "playerId": "cfb600024",
+  "player": "Ohio State WR3",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 76
+ },
+ {
+  "playerId": "cfb600024",
+  "player": "Ohio State WR3",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 1009.4
+ },
+ {
+  "playerId": "cfb600024",
+  "player": "Ohio State WR3",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 9
+ },
+ {
+  "playerId": "cfb600025",
+  "player": "Ohio State WR4",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 29
+ },
+ {
+  "playerId": "cfb600025",
+  "player": "Ohio State WR4",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 362.7
+ },
+ {
+  "playerId": "cfb600025",
+  "player": "Ohio State WR4",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 6
+ },
+ {
+  "playerId": "cfb600026",
+  "player": "Ohio State TE1",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 78
+ },
+ {
+  "playerId": "cfb600026",
+  "player": "Ohio State TE1",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 1150.7
+ },
+ {
+  "playerId": "cfb600026",
+  "player": "Ohio State TE1",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 5
+ },
+ {
+  "playerId": "cfb600027",
+  "player": "Ohio State TE2",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 72
+ },
+ {
+  "playerId": "cfb600027",
+  "player": "Ohio State TE2",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 1043.8
+ },
+ {
+  "playerId": "cfb600027",
+  "player": "Ohio State TE2",
+  "team": "Ohio State",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 5
+ },
+ {
+  "playerId": "cfb600028",
+  "player": "Davis Warren",
+  "team": "Michigan",
+  "category": "passing",
+  "statType": "ATT",
+  "stat": 182
+ },
+ {
+  "playerId": "cfb600028",
+  "player": "Davis Warren",
+  "team": "Michigan",
+  "category": "passing",
+  "statType": "YDS",
+  "stat": 1312.1
+ },
+ {
+  "playerId": "cfb600028",
+  "player": "Davis Warren",
+  "team": "Michigan",
+  "category": "passing",
+  "statType": "TD",
+  "stat": 12
+ },
+ {
+  "playerId": "cfb600028",
+  "player": "Davis Warren",
+  "team": "Michigan",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 39
+ },
+ {
+  "playerId": "cfb600028",
+  "player": "Davis Warren",
+  "team": "Michigan",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 472.6
+ },
+ {
+  "playerId": "cfb600028",
+  "player": "Davis Warren",
+  "team": "Michigan",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 4
+ },
+ {
+  "playerId": "cfb600029",
+  "player": "Kalel Mullings",
+  "team": "Michigan",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 123
+ },
+ {
+  "playerId": "cfb600029",
+  "player": "Kalel Mullings",
+  "team": "Michigan",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 639.9
+ },
+ {
+  "playerId": "cfb600029",
+  "player": "Kalel Mullings",
+  "team": "Michigan",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 4
+ },
+ {
+  "playerId": "cfb600029",
+  "player": "Kalel Mullings",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 24
+ },
+ {
+  "playerId": "cfb600029",
+  "player": "Kalel Mullings",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 62
+ },
+ {
+  "playerId": "cfb600030",
+  "player": "Colston Loveland",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 39
+ },
+ {
+  "playerId": "cfb600030",
+  "player": "Colston Loveland",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 533.8
+ },
+ {
+  "playerId": "cfb600030",
+  "player": "Colston Loveland",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 6
+ },
+ {
+  "playerId": "cfb600031",
+  "player": "Tyler Morris",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 29
+ },
+ {
+  "playerId": "cfb600031",
+  "player": "Tyler Morris",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 380.2
+ },
+ {
+  "playerId": "cfb600031",
+  "player": "Tyler Morris",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 4
+ },
+ {
+  "playerId": "cfb600032",
+  "player": "Michigan RB2",
+  "team": "Michigan",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 199
+ },
+ {
+  "playerId": "cfb600032",
+  "player": "Michigan RB2",
+  "team": "Michigan",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 1167.4
+ },
+ {
+  "playerId": "cfb600032",
+  "player": "Michigan RB2",
+  "team": "Michigan",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 11
+ },
+ {
+  "playerId": "cfb600032",
+  "player": "Michigan RB2",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 13
+ },
+ {
+  "playerId": "cfb600032",
+  "player": "Michigan RB2",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 206
+ },
+ {
+  "playerId": "cfb600033",
+  "player": "Michigan WR3",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 24
+ },
+ {
+  "playerId": "cfb600033",
+  "player": "Michigan WR3",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 344.3
+ },
+ {
+  "playerId": "cfb600033",
+  "player": "Michigan WR3",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 2
+ },
+ {
+  "playerId": "cfb600034",
+  "player": "Michigan WR4",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 53
+ },
+ {
+  "playerId": "cfb600034",
+  "player": "Michigan WR4",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 952.4
+ },
+ {
+  "playerId": "cfb600034",
+  "player": "Michigan WR4",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 6
+ },
+ {
+  "playerId": "cfb600035",
+  "player": "Michigan TE1",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 24
+ },
+ {
+  "playerId": "cfb600035",
+  "player": "Michigan TE1",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 326.4
+ },
+ {
+  "playerId": "cfb600035",
+  "player": "Michigan TE1",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 12
+ },
+ {
+  "playerId": "cfb600036",
+  "player": "Michigan TE2",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 50
+ },
+ {
+  "playerId": "cfb600036",
+  "player": "Michigan TE2",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 791.4
+ },
+ {
+  "playerId": "cfb600036",
+  "player": "Michigan TE2",
+  "team": "Michigan",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 6
+ },
+ {
+  "playerId": "cfb600037",
+  "player": "Quinn Ewers",
+  "team": "Texas",
+  "category": "passing",
+  "statType": "ATT",
+  "stat": 209
+ },
+ {
+  "playerId": "cfb600037",
+  "player": "Quinn Ewers",
+  "team": "Texas",
+  "category": "passing",
+  "statType": "YDS",
+  "stat": 1810.6
+ },
+ {
+  "playerId": "cfb600037",
+  "player": "Quinn Ewers",
+  "team": "Texas",
+  "category": "passing",
+  "statType": "TD",
+  "stat": 18
+ },
+ {
+  "playerId": "cfb600037",
+  "player": "Quinn Ewers",
+  "team": "Texas",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 65
+ },
+ {
+  "playerId": "cfb600037",
+  "player": "Quinn Ewers",
+  "team": "Texas",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": -156.6
+ },
+ {
+  "playerId": "cfb600037",
+  "player": "Quinn Ewers",
+  "team": "Texas",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 2
+ },
+ {
+  "playerId": "cfb600038",
+  "player": "Jaydon Blue",
+  "team": "Texas",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 81
+ },
+ {
+  "playerId": "cfb600038",
+  "player": "Jaydon Blue",
+  "team": "Texas",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 345.6
+ },
+ {
+  "playerId": "cfb600038",
+  "player": "Jaydon Blue",
+  "team": "Texas",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 14
+ },
+ {
+  "playerId": "cfb600038",
+  "player": "Jaydon Blue",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 9
+ },
+ {
+  "playerId": "cfb600038",
+  "player": "Jaydon Blue",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 128
+ },
+ {
+  "playerId": "cfb600039",
+  "player": "Isaiah Bond",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 69
+ },
+ {
+  "playerId": "cfb600039",
+  "player": "Isaiah Bond",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 1122.9
+ },
+ {
+  "playerId": "cfb600039",
+  "player": "Isaiah Bond",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 5
+ },
+ {
+  "playerId": "cfb600040",
+  "player": "Matthew Golden",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 46
+ },
+ {
+  "playerId": "cfb600040",
+  "player": "Matthew Golden",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 643.2
+ },
+ {
+  "playerId": "cfb600040",
+  "player": "Matthew Golden",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 5
+ },
+ {
+  "playerId": "cfb600041",
+  "player": "Texas RB2",
+  "team": "Texas",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 173
+ },
+ {
+  "playerId": "cfb600041",
+  "player": "Texas RB2",
+  "team": "Texas",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 910.4
+ },
+ {
+  "playerId": "cfb600041",
+  "player": "Texas RB2",
+  "team": "Texas",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 14
+ },
+ {
+  "playerId": "cfb600041",
+  "player": "Texas RB2",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 19
+ },
+ {
+  "playerId": "cfb600041",
+  "player": "Texas RB2",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 105
+ },
+ {
+  "playerId": "cfb600042",
+  "player": "Texas WR3",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 39
+ },
+ {
+  "playerId": "cfb600042",
+  "player": "Texas WR3",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 533.4
+ },
+ {
+  "playerId": "cfb600042",
+  "player": "Texas WR3",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 3
+ },
+ {
+  "playerId": "cfb600043",
+  "player": "Texas WR4",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 70
+ },
+ {
+  "playerId": "cfb600043",
+  "player": "Texas WR4",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 895.8
+ },
+ {
+  "playerId": "cfb600043",
+  "player": "Texas WR4",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 7
+ },
+ {
+  "playerId": "cfb600044",
+  "player": "Texas TE1",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 65
+ },
+ {
+  "playerId": "cfb600044",
+  "player": "Texas TE1",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 864.3
+ },
+ {
+  "playerId": "cfb600044",
+  "player": "Texas TE1",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 3
+ },
+ {
+  "playerId": "cfb600045",
+  "player": "Texas TE2",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 35
+ },
+ {
+  "playerId": "cfb600045",
+  "player": "Texas TE2",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 496.7
+ },
+ {
+  "playerId": "cfb600045",
+  "player": "Texas TE2",
+  "team": "Texas",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 8
+ },
+ {
+  "playerId": "cfb600046",
+  "player": "Jackson Arnold",
+  "team": "Oklahoma",
+  "category": "passing",
+  "statType": "ATT",
+  "stat": 334
+ },
+ {
+  "playerId": "cfb600046",
+  "player": "Jackson Arnold",
+  "team": "Oklahoma",
+  "category": "passing",
+  "statType": "YDS",
+  "stat": 2535.4
+ },
+ {
+  "playerId": "cfb600046",
+  "player": "Jackson Arnold",
+  "team": "Oklahoma",
+  "category": "passing",
+  "statType": "TD",
+  "stat": 27
+ },
+ {
+  "playerId": "cfb600046",
+  "player": "Jackson Arnold",
+  "team": "Oklahoma",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 68
+ },
+ {
+  "playerId": "cfb600046",
+  "player": "Jackson Arnold",
+  "team": "Oklahoma",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 329.2
+ },
+ {
+  "playerId": "cfb600046",
+  "player": "Jackson Arnold",
+  "team": "Oklahoma",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 9
+ },
+ {
+  "playerId": "cfb600047",
+  "player": "Gavin Sawchuk",
+  "team": "Oklahoma",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 250
+ },
+ {
+  "playerId": "cfb600047",
+  "player": "Gavin Sawchuk",
+  "team": "Oklahoma",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 1185.5
+ },
+ {
+  "playerId": "cfb600047",
+  "player": "Gavin Sawchuk",
+  "team": "Oklahoma",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 6
+ },
+ {
+  "playerId": "cfb600047",
+  "player": "Gavin Sawchuk",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 17
+ },
+ {
+  "playerId": "cfb600047",
+  "player": "Gavin Sawchuk",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 249
+ },
+ {
+  "playerId": "cfb600048",
+  "player": "Deion Burks",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 49
+ },
+ {
+  "playerId": "cfb600048",
+  "player": "Deion Burks",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 583.8
+ },
+ {
+  "playerId": "cfb600048",
+  "player": "Deion Burks",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 3
+ },
+ {
+  "playerId": "cfb600049",
+  "player": "Nic Anderson",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 25
+ },
+ {
+  "playerId": "cfb600049",
+  "player": "Nic Anderson",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 324.1
+ },
+ {
+  "playerId": "cfb600049",
+  "player": "Nic Anderson",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 8
+ },
+ {
+  "playerId": "cfb600050",
+  "player": "Oklahoma RB2",
+  "team": "Oklahoma",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 109
+ },
+ {
+  "playerId": "cfb600050",
+  "player": "Oklahoma RB2",
+  "team": "Oklahoma",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 659.5
+ },
+ {
+  "playerId": "cfb600050",
+  "player": "Oklahoma RB2",
+  "team": "Oklahoma",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 12
+ },
+ {
+  "playerId": "cfb600050",
+  "player": "Oklahoma RB2",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 24
+ },
+ {
+  "playerId": "cfb600050",
+  "player": "Oklahoma RB2",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 226
+ },
+ {
+  "playerId": "cfb600051",
+  "player": "Oklahoma WR3",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 62
+ },
+ {
+  "playerId": "cfb600051",
+  "player": "Oklahoma WR3",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 852.0
+ },
+ {
+  "playerId": "cfb600051",
+  "player": "Oklahoma WR3",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 10
+ },
+ {
+  "playerId": "cfb600052",
+  "player": "Oklahoma WR4",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 42
+ },
+ {
+  "playerId": "cfb600052",
+  "player": "Oklahoma WR4",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 740.0
+ },
+ {
+  "playerId": "cfb600052",
+  "player": "Oklahoma WR4",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 10
+ },
+ {
+  "playerId": "cfb600053",
+  "player": "Oklahoma TE1",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 38
+ },
+ {
+  "playerId": "cfb600053",
+  "player": "Oklahoma TE1",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 468.5
+ },
+ {
+  "playerId": "cfb600053",
+  "player": "Oklahoma TE1",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 7
+ },
+ {
+  "playerId": "cfb600054",
+  "player": "Oklahoma TE2",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 51
+ },
+ {
+  "playerId": "cfb600054",
+  "player": "Oklahoma TE2",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 671.7
+ },
+ {
+  "playerId": "cfb600054",
+  "player": "Oklahoma TE2",
+  "team": "Oklahoma",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 6
+ },
+ {
+  "playerId": "cfb600055",
+  "player": "Dillon Gabriel",
+  "team": "Oregon",
+  "category": "passing",
+  "statType": "ATT",
+  "stat": 255
+ },
+ {
+  "playerId": "cfb600055",
+  "player": "Dillon Gabriel",
+  "team": "Oregon",
+  "category": "passing",
+  "statType": "YDS",
+  "stat": 2019.5
+ },
+ {
+  "playerId": "cfb600055",
+  "player": "Dillon Gabriel",
+  "team": "Oregon",
+  "category": "passing",
+  "statType": "TD",
+  "stat": 17
+ },
+ {
+  "playerId": "cfb600055",
+  "player": "Dillon Gabriel",
+  "team": "Oregon",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 71
+ },
+ {
+  "playerId": "cfb600055",
+  "player": "Dillon Gabriel",
+  "team": "Oregon",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 203.7
+ },
+ {
+  "playerId": "cfb600055",
+  "player": "Dillon Gabriel",
+  "team": "Oregon",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 7
+ },
+ {
+  "playerId": "cfb600056",
+  "player": "Jordan James",
+  "team": "Oregon",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 142
+ },
+ {
+  "playerId": "cfb600056",
+  "player": "Jordan James",
+  "team": "Oregon",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 684.9
+ },
+ {
+  "playerId": "cfb600056",
+  "player": "Jordan James",
+  "team": "Oregon",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 5
+ },
+ {
+  "playerId": "cfb600056",
+  "player": "Jordan James",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 23
+ },
+ {
+  "playerId": "cfb600056",
+  "player": "Jordan James",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 128
+ },
+ {
+  "playerId": "cfb600057",
+  "player": "Tez Johnson",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 51
+ },
+ {
+  "playerId": "cfb600057",
+  "player": "Tez Johnson",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 902.9
+ },
+ {
+  "playerId": "cfb600057",
+  "player": "Tez Johnson",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 4
+ },
+ {
+  "playerId": "cfb600058",
+  "player": "Traeshon Holden",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 20
+ },
+ {
+  "playerId": "cfb600058",
+  "player": "Traeshon Holden",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 294.0
+ },
+ {
+  "playerId": "cfb600058",
+  "player": "Traeshon Holden",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 10
+ },
+ {
+  "playerId": "cfb600059",
+  "player": "Oregon RB2",
+  "team": "Oregon",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 137
+ },
+ {
+  "playerId": "cfb600059",
+  "player": "Oregon RB2",
+  "team": "Oregon",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 612.3
+ },
+ {
+  "playerId": "cfb600059",
+  "player": "Oregon RB2",
+  "team": "Oregon",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 6
+ },
+ {
+  "playerId": "cfb600059",
+  "player": "Oregon RB2",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 21
+ },
+ {
+  "playerId": "cfb600059",
+  "player": "Oregon RB2",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 120
+ },
+ {
+  "playerId": "cfb600060",
+  "player": "Oregon WR3",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 58
+ },
+ {
+  "playerId": "cfb600060",
+  "player": "Oregon WR3",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 839.5
+ },
+ {
+  "playerId": "cfb600060",
+  "player": "Oregon WR3",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 9
+ },
+ {
+  "playerId": "cfb600061",
+  "player": "Oregon WR4",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 40
+ },
+ {
+  "playerId": "cfb600061",
+  "player": "Oregon WR4",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 618.7
+ },
+ {
+  "playerId": "cfb600061",
+  "player": "Oregon WR4",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 4
+ },
+ {
+  "playerId": "cfb600062",
+  "player": "Oregon TE1",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 49
+ },
+ {
+  "playerId": "cfb600062",
+  "player": "Oregon TE1",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 741.8
+ },
+ {
+  "playerId": "cfb600062",
+  "player": "Oregon TE1",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 4
+ },
+ {
+  "playerId": "cfb600063",
+  "player": "Oregon TE2",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 51
+ },
+ {
+  "playerId": "cfb600063",
+  "player": "Oregon TE2",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 873.7
+ },
+ {
+  "playerId": "cfb600063",
+  "player": "Oregon TE2",
+  "team": "Oregon",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 12
+ },
+ {
+  "playerId": "cfb600064",
+  "player": "Will Rogers",
+  "team": "Washington",
+  "category": "passing",
+  "statType": "ATT",
+  "stat": 286
+ },
+ {
+  "playerId": "cfb600064",
+  "player": "Will Rogers",
+  "team": "Washington",
+  "category": "passing",
+  "statType": "YDS",
+  "stat": 2402.4
+ },
+ {
+  "playerId": "cfb600064",
+  "player": "Will Rogers",
+  "team": "Washington",
+  "category": "passing",
+  "statType": "TD",
+  "stat": 24
+ },
+ {
+  "playerId": "cfb600064",
+  "player": "Will Rogers",
+  "team": "Washington",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 88
+ },
+ {
+  "playerId": "cfb600064",
+  "player": "Will Rogers",
+  "team": "Washington",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 393.6
+ },
+ {
+  "playerId": "cfb600064",
+  "player": "Will Rogers",
+  "team": "Washington",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 3
+ },
+ {
+  "playerId": "cfb600065",
+  "player": "Jonah Coleman",
+  "team": "Washington",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 108
+ },
+ {
+  "playerId": "cfb600065",
+  "player": "Jonah Coleman",
+  "team": "Washington",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 690.3
+ },
+ {
+  "playerId": "cfb600065",
+  "player": "Jonah Coleman",
+  "team": "Washington",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 6
+ },
+ {
+  "playerId": "cfb600065",
+  "player": "Jonah Coleman",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 17
+ },
+ {
+  "playerId": "cfb600065",
+  "player": "Jonah Coleman",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 215
+ },
+ {
+  "playerId": "cfb600066",
+  "player": "Denzel Boston",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 48
+ },
+ {
+  "playerId": "cfb600066",
+  "player": "Denzel Boston",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 856.9
+ },
+ {
+  "playerId": "cfb600066",
+  "player": "Denzel Boston",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 5
+ },
+ {
+  "playerId": "cfb600067",
+  "player": "Giles Jackson",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 44
+ },
+ {
+  "playerId": "cfb600067",
+  "player": "Giles Jackson",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 702.5
+ },
+ {
+  "playerId": "cfb600067",
+  "player": "Giles Jackson",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 3
+ },
+ {
+  "playerId": "cfb600068",
+  "player": "Washington RB2",
+  "team": "Washington",
+  "category": "rushing",
+  "statType": "CAR",
+  "stat": 106
+ },
+ {
+  "playerId": "cfb600068",
+  "player": "Washington RB2",
+  "team": "Washington",
+  "category": "rushing",
+  "statType": "YDS",
+  "stat": 460.9
+ },
+ {
+  "playerId": "cfb600068",
+  "player": "Washington RB2",
+  "team": "Washington",
+  "category": "rushing",
+  "statType": "TD",
+  "stat": 8
+ },
+ {
+  "playerId": "cfb600068",
+  "player": "Washington RB2",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 26
+ },
+ {
+  "playerId": "cfb600068",
+  "player": "Washington RB2",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 63
+ },
+ {
+  "playerId": "cfb600069",
+  "player": "Washington WR3",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 21
+ },
+ {
+  "playerId": "cfb600069",
+  "player": "Washington WR3",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 325.7
+ },
+ {
+  "playerId": "cfb600069",
+  "player": "Washington WR3",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 11
+ },
+ {
+  "playerId": "cfb600070",
+  "player": "Washington WR4",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 53
+ },
+ {
+  "playerId": "cfb600070",
+  "player": "Washington WR4",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 947.2
+ },
+ {
+  "playerId": "cfb600070",
+  "player": "Washington WR4",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 10
+ },
+ {
+  "playerId": "cfb600071",
+  "player": "Washington TE1",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 47
+ },
+ {
+  "playerId": "cfb600071",
+  "player": "Washington TE1",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 840.5
+ },
+ {
+  "playerId": "cfb600071",
+  "player": "Washington TE1",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 3
+ },
+ {
+  "playerId": "cfb600072",
+  "player": "Washington TE2",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "REC",
+  "stat": 67
+ },
+ {
+  "playerId": "cfb600072",
+  "player": "Washington TE2",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "YDS",
+  "stat": 1161.9
+ },
+ {
+  "playerId": "cfb600072",
+  "player": "Washington TE2",
+  "team": "Washington",
+  "category": "receiving",
+  "statType": "TD",
+  "stat": 4
+ }
+]

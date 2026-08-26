@@ -1,0 +1,1407 @@
+{
+ "dates": [
+  {
+   "date": "2025-08-26",
+   "games": [
+    {
+     "gamePk": 1,
+     "gameDate": "2025-08-26T23:05:00Z",
+     "venue": {
+      "name": "NYY Park"
+     },
+     "teams": {
+      "home": {
+       "team": {
+        "abbreviation": "NYY",
+        "name": "NYY"
+       },
+       "probablePitcher": {
+        "id": 600019,
+        "fullName": "Gerrit Cole",
+        "pitchHand": {
+         "code": "R"
+        }
+       }
+      },
+      "away": {
+       "team": {
+        "abbreviation": "BOS",
+        "name": "BOS"
+       },
+       "probablePitcher": {
+        "id": 600020,
+        "fullName": "Garrett Crochet",
+        "pitchHand": {
+         "code": "L"
+        }
+       }
+      }
+     },
+     "lineups": {
+      "homePlayers": [
+       {
+        "id": 600001,
+        "fullName": "Aaron Judge",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600002,
+        "fullName": "Juan Soto",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600003,
+        "fullName": "Anthony Volpe",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600004,
+        "fullName": "Jazz Chisholm Jr.",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600005,
+        "fullName": "Austin Wells",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600006,
+        "fullName": "Ben Rice",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600007,
+        "fullName": "Trent Grisham",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600008,
+        "fullName": "Oswaldo Cabrera",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600009,
+        "fullName": "Anthony Rizzo",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ],
+      "awayPlayers": [
+       {
+        "id": 600010,
+        "fullName": "Jarren Duran",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600011,
+        "fullName": "Rafael Devers",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600012,
+        "fullName": "Trevor Story",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600013,
+        "fullName": "Wilyer Abreu",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600014,
+        "fullName": "Triston Casas",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600015,
+        "fullName": "Ceddanne Rafaela",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600016,
+        "fullName": "Connor Wong",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600017,
+        "fullName": "Masataka Yoshida",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600018,
+        "fullName": "David Hamilton",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ]
+     },
+     "weather": {
+      "temp": "73",
+      "wind": "3 mph, Out To CF"
+     },
+     "officials": [
+      {
+       "officialType": "Home Plate",
+       "official": {
+        "fullName": "Angel Hernandez"
+       }
+      }
+     ]
+    },
+    {
+     "gamePk": 2,
+     "gameDate": "2025-08-26T23:05:00Z",
+     "venue": {
+      "name": "LAD Park"
+     },
+     "teams": {
+      "home": {
+       "team": {
+        "abbreviation": "LAD",
+        "name": "LAD"
+       },
+       "probablePitcher": {
+        "id": 600039,
+        "fullName": "Yoshinobu Yamamoto",
+        "pitchHand": {
+         "code": "R"
+        }
+       }
+      },
+      "away": {
+       "team": {
+        "abbreviation": "SD",
+        "name": "SD"
+       },
+       "probablePitcher": {
+        "id": 600040,
+        "fullName": "Dylan Cease",
+        "pitchHand": {
+         "code": "R"
+        }
+       }
+      }
+     },
+     "lineups": {
+      "homePlayers": [
+       {
+        "id": 600021,
+        "fullName": "Shohei Ohtani",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600022,
+        "fullName": "Mookie Betts",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600023,
+        "fullName": "Freddie Freeman",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600024,
+        "fullName": "Teoscar Hernandez",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600025,
+        "fullName": "Max Muncy",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600026,
+        "fullName": "Will Smith",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600027,
+        "fullName": "Tommy Edman",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600028,
+        "fullName": "Andy Pages",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600029,
+        "fullName": "Gavin Lux",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ],
+      "awayPlayers": [
+       {
+        "id": 600030,
+        "fullName": "Fernando Tatis Jr.",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600031,
+        "fullName": "Luis Arraez",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600032,
+        "fullName": "Manny Machado",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600033,
+        "fullName": "Jackson Merrill",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600034,
+        "fullName": "Xander Bogaerts",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600035,
+        "fullName": "Jake Cronenworth",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600036,
+        "fullName": "Kyle Higashioka",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600037,
+        "fullName": "Jurickson Profar",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600038,
+        "fullName": "Bryce Johnson",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ]
+     },
+     "weather": {
+      "temp": "70",
+      "wind": "8 mph, Out To CF"
+     },
+     "officials": [
+      {
+       "officialType": "Home Plate",
+       "official": {
+        "fullName": "Angel Hernandez"
+       }
+      }
+     ]
+    },
+    {
+     "gamePk": 3,
+     "gameDate": "2025-08-26T23:05:00Z",
+     "venue": {
+      "name": "ATL Park"
+     },
+     "teams": {
+      "home": {
+       "team": {
+        "abbreviation": "ATL",
+        "name": "ATL"
+       },
+       "probablePitcher": {
+        "id": 600059,
+        "fullName": "Chris Sale",
+        "pitchHand": {
+         "code": "L"
+        }
+       }
+      },
+      "away": {
+       "team": {
+        "abbreviation": "PHI",
+        "name": "PHI"
+       },
+       "probablePitcher": {
+        "id": 600060,
+        "fullName": "Zack Wheeler",
+        "pitchHand": {
+         "code": "R"
+        }
+       }
+      }
+     },
+     "lineups": {
+      "homePlayers": [
+       {
+        "id": 600041,
+        "fullName": "Ronald Acuna Jr.",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600042,
+        "fullName": "Ozzie Albies",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600043,
+        "fullName": "Austin Riley",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600044,
+        "fullName": "Matt Olson",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600045,
+        "fullName": "Marcell Ozuna",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600046,
+        "fullName": "Michael Harris II",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600047,
+        "fullName": "Sean Murphy",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600048,
+        "fullName": "Orlando Arcia",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600049,
+        "fullName": "Jarred Kelenic",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ],
+      "awayPlayers": [
+       {
+        "id": 600050,
+        "fullName": "Kyle Schwarber",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600051,
+        "fullName": "Trea Turner",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600052,
+        "fullName": "Bryce Harper",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600053,
+        "fullName": "Alec Bohm",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600054,
+        "fullName": "Nick Castellanos",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600055,
+        "fullName": "J.T. Realmuto",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600056,
+        "fullName": "Brandon Marsh",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600057,
+        "fullName": "Bryson Stott",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600058,
+        "fullName": "Johan Rojas",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ]
+     },
+     "weather": {
+      "temp": "70",
+      "wind": "12 mph, Out To CF"
+     },
+     "officials": [
+      {
+       "officialType": "Home Plate",
+       "official": {
+        "fullName": "Angel Hernandez"
+       }
+      }
+     ]
+    },
+    {
+     "gamePk": 4,
+     "gameDate": "2025-08-26T23:05:00Z",
+     "venue": {
+      "name": "HOU Park"
+     },
+     "teams": {
+      "home": {
+       "team": {
+        "abbreviation": "HOU",
+        "name": "HOU"
+       },
+       "probablePitcher": {
+        "id": 600079,
+        "fullName": "Framber Valdez",
+        "pitchHand": {
+         "code": "L"
+        }
+       }
+      },
+      "away": {
+       "team": {
+        "abbreviation": "SEA",
+        "name": "SEA"
+       },
+       "probablePitcher": {
+        "id": 600080,
+        "fullName": "Logan Gilbert",
+        "pitchHand": {
+         "code": "R"
+        }
+       }
+      }
+     },
+     "lineups": {
+      "homePlayers": [
+       {
+        "id": 600061,
+        "fullName": "Jose Altuve",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600062,
+        "fullName": "Yordan Alvarez",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600063,
+        "fullName": "Alex Bregman",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600064,
+        "fullName": "Kyle Tucker",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600065,
+        "fullName": "Jeremy Pena",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600066,
+        "fullName": "Yainer Diaz",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600067,
+        "fullName": "Chas McCormick",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600068,
+        "fullName": "Jake Meyers",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600069,
+        "fullName": "Mauricio Dubon",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ],
+      "awayPlayers": [
+       {
+        "id": 600070,
+        "fullName": "Julio Rodriguez",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600071,
+        "fullName": "Cal Raleigh",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600072,
+        "fullName": "Randy Arozarena",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600073,
+        "fullName": "J.P. Crawford",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600074,
+        "fullName": "Luke Raley",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600075,
+        "fullName": "Mitch Garver",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600076,
+        "fullName": "Dylan Moore",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600077,
+        "fullName": "Victor Robles",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600078,
+        "fullName": "Josh Rojas",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ]
+     },
+     "weather": {
+      "temp": "65",
+      "wind": "3 mph, Out To CF"
+     },
+     "officials": [
+      {
+       "officialType": "Home Plate",
+       "official": {
+        "fullName": "Angel Hernandez"
+       }
+      }
+     ]
+    },
+    {
+     "gamePk": 5,
+     "gameDate": "2025-08-26T23:05:00Z",
+     "venue": {
+      "name": "CHC Park"
+     },
+     "teams": {
+      "home": {
+       "team": {
+        "abbreviation": "CHC",
+        "name": "CHC"
+       },
+       "probablePitcher": {
+        "id": 600099,
+        "fullName": "Shota Imanaga",
+        "pitchHand": {
+         "code": "L"
+        }
+       }
+      },
+      "away": {
+       "team": {
+        "abbreviation": "MIL",
+        "name": "MIL"
+       },
+       "probablePitcher": {
+        "id": 600100,
+        "fullName": "Freddy Peralta",
+        "pitchHand": {
+         "code": "R"
+        }
+       }
+      }
+     },
+     "lineups": {
+      "homePlayers": [
+       {
+        "id": 600081,
+        "fullName": "Ian Happ",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600082,
+        "fullName": "Seiya Suzuki",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600083,
+        "fullName": "Dansby Swanson",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600084,
+        "fullName": "Nico Hoerner",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600085,
+        "fullName": "Michael Busch",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600086,
+        "fullName": "Pete Crow-Armstrong",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600087,
+        "fullName": "Miguel Amaya",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600088,
+        "fullName": "Isaac Paredes",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600089,
+        "fullName": "Nick Madrigal",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ],
+      "awayPlayers": [
+       {
+        "id": 600090,
+        "fullName": "Christian Yelich",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600091,
+        "fullName": "William Contreras",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600092,
+        "fullName": "Willy Adames",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600093,
+        "fullName": "Jackson Chourio",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600094,
+        "fullName": "Rhys Hoskins",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600095,
+        "fullName": "Sal Frelick",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600096,
+        "fullName": "Brice Turang",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600097,
+        "fullName": "Joey Ortiz",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600098,
+        "fullName": "Garrett Mitchell",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ]
+     },
+     "weather": {
+      "temp": "92",
+      "wind": "18 mph, Out To CF"
+     },
+     "officials": [
+      {
+       "officialType": "Home Plate",
+       "official": {
+        "fullName": "Angel Hernandez"
+       }
+      }
+     ]
+    },
+    {
+     "gamePk": 6,
+     "gameDate": "2025-08-26T23:05:00Z",
+     "venue": {
+      "name": "COL Park"
+     },
+     "teams": {
+      "home": {
+       "team": {
+        "abbreviation": "COL",
+        "name": "COL"
+       },
+       "probablePitcher": {
+        "id": 600119,
+        "fullName": "Kyle Freeland",
+        "pitchHand": {
+         "code": "L"
+        }
+       }
+      },
+      "away": {
+       "team": {
+        "abbreviation": "ARI",
+        "name": "ARI"
+       },
+       "probablePitcher": {
+        "id": 600120,
+        "fullName": "Zac Gallen",
+        "pitchHand": {
+         "code": "R"
+        }
+       }
+      }
+     },
+     "lineups": {
+      "homePlayers": [
+       {
+        "id": 600101,
+        "fullName": "Brenton Doyle",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600102,
+        "fullName": "Ezequiel Tovar",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600103,
+        "fullName": "Ryan McMahon",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600104,
+        "fullName": "Kris Bryant",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600105,
+        "fullName": "Michael Toglia",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600106,
+        "fullName": "Nolan Jones",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600107,
+        "fullName": "Elias Diaz",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600108,
+        "fullName": "Jordan Beck",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600109,
+        "fullName": "Hunter Goodman",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ],
+      "awayPlayers": [
+       {
+        "id": 600110,
+        "fullName": "Ketel Marte",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600111,
+        "fullName": "Corbin Carroll",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600112,
+        "fullName": "Christian Walker",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600113,
+        "fullName": "Eugenio Suarez",
+        "batSide": {
+         "code": "S"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600114,
+        "fullName": "Lourdes Gurriel Jr.",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600115,
+        "fullName": "Gabriel Moreno",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600116,
+        "fullName": "Alek Thomas",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600117,
+        "fullName": "Geraldo Perdomo",
+        "batSide": {
+         "code": "R"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       },
+       {
+        "id": 600118,
+        "fullName": "Jake McCarthy",
+        "batSide": {
+         "code": "L"
+        },
+        "primaryPosition": {
+         "abbreviation": "OF"
+        }
+       }
+      ]
+     },
+     "weather": {
+      "temp": "61",
+      "wind": "11 mph, Out To CF"
+     },
+     "officials": [
+      {
+       "officialType": "Home Plate",
+       "official": {
+        "fullName": "Angel Hernandez"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

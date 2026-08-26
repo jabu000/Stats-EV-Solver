@@ -1,0 +1,44 @@
+{
+  "_comment": "League-average priors. Every per-player rate is shrunk toward these using empirical Bayes, which is what stops a 3-game sample from topping the board. 'prior_weight' is the pseudo-sample-size: higher means we trust the player's own numbers less.",
+  "MLB": {
+    "pitcher_k_rate": 0.222,
+    "pitcher_k_rate_prior_weight": 250,
+    "batter_hit_per_pa": 0.232,
+    "batter_hit_per_pa_prior_weight": 200,
+    "batters_faced_starter": 23.5,
+    "plate_appearances_per_game": 4.15,
+    "platoon_k_boost_vs_opposite": 0.94,
+    "platoon_k_boost_vs_same": 1.09,
+    "platoon_hit_boost_vs_opposite": 1.04,
+    "platoon_hit_boost_vs_same": 0.95,
+    "league_runs_per_game": 4.35
+  },
+  "NFL": {
+    "plays_per_game": 63.0,
+    "pass_rate": 0.575,
+    "team_points": 22.5,
+    "yards_per_target": 7.9,
+    "catch_rate": 0.645,
+    "yards_per_carry": 4.35,
+    "yards_per_attempt": 7.05,
+    "target_share_prior_weight": 45,
+    "rush_share_prior_weight": 45,
+    "efficiency_prior_weight": 60,
+    "td_per_team_game": 2.55,
+    "yards_per_point": 14.5
+  },
+  "CFB": {
+    "plays_per_game": 68.0,
+    "pass_rate": 0.520,
+    "team_points": 27.5,
+    "yards_per_target": 8.6,
+    "catch_rate": 0.620,
+    "yards_per_carry": 4.65,
+    "yards_per_attempt": 7.55,
+    "target_share_prior_weight": 70,
+    "rush_share_prior_weight": 70,
+    "efficiency_prior_weight": 95,
+    "td_per_team_game": 3.20,
+    "yards_per_point": 14.0
+  }
+}

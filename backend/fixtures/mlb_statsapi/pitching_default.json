@@ -1,0 +1,176 @@
+{
+ "stats": [
+  {
+   "splits": [
+    {
+     "player": {
+      "id": 600019,
+      "fullName": "Gerrit Cole"
+     },
+     "stat": {
+      "battersFaced": 577,
+      "strikeOuts": 171,
+      "hits": 134,
+      "gamesStarted": 25,
+      "inningsPitched": "135.6",
+      "numberOfPitches": 2337
+     }
+    },
+    {
+     "player": {
+      "id": 600020,
+      "fullName": "Garrett Crochet"
+     },
+     "stat": {
+      "battersFaced": 490,
+      "strikeOuts": 98,
+      "hits": 100,
+      "gamesStarted": 19,
+      "inningsPitched": "113.0",
+      "numberOfPitches": 1952
+     }
+    },
+    {
+     "player": {
+      "id": 600039,
+      "fullName": "Yoshinobu Yamamoto"
+     },
+     "stat": {
+      "battersFaced": 462,
+      "strikeOuts": 121,
+      "hits": 91,
+      "gamesStarted": 21,
+      "inningsPitched": "108.6",
+      "numberOfPitches": 1698
+     }
+    },
+    {
+     "player": {
+      "id": 600040,
+      "fullName": "Dylan Cease"
+     },
+     "stat": {
+      "battersFaced": 650,
+      "strikeOuts": 138,
+      "hits": 158,
+      "gamesStarted": 26,
+      "inningsPitched": "161.6",
+      "numberOfPitches": 2552
+     }
+    },
+    {
+     "player": {
+      "id": 600059,
+      "fullName": "Chris Sale"
+     },
+     "stat": {
+      "battersFaced": 353,
+      "strikeOuts": 104,
+      "hits": 84,
+      "gamesStarted": 16,
+      "inningsPitched": "86.8",
+      "numberOfPitches": 1501
+     }
+    },
+    {
+     "player": {
+      "id": 600060,
+      "fullName": "Zack Wheeler"
+     },
+     "stat": {
+      "battersFaced": 427,
+      "strikeOuts": 76,
+      "hits": 104,
+      "gamesStarted": 19,
+      "inningsPitched": "99.3",
+      "numberOfPitches": 1617
+     }
+    },
+    {
+     "player": {
+      "id": 600079,
+      "fullName": "Framber Valdez"
+     },
+     "stat": {
+      "battersFaced": 736,
+      "strikeOuts": 217,
+      "hits": 173,
+      "gamesStarted": 27,
+      "inningsPitched": "168.2",
+      "numberOfPitches": 2842
+     }
+    },
+    {
+     "player": {
+      "id": 600080,
+      "fullName": "Logan Gilbert"
+     },
+     "stat": {
+      "battersFaced": 430,
+      "strikeOuts": 123,
+      "hits": 91,
+      "gamesStarted": 16,
+      "inningsPitched": "102.2",
+      "numberOfPitches": 1728
+     }
+    },
+    {
+     "player": {
+      "id": 600099,
+      "fullName": "Shota Imanaga"
+     },
+     "stat": {
+      "battersFaced": 616,
+      "strikeOuts": 164,
+      "hits": 122,
+      "gamesStarted": 24,
+      "inningsPitched": "146.6",
+      "numberOfPitches": 2481
+     }
+    },
+    {
+     "player": {
+      "id": 600100,
+      "fullName": "Freddy Peralta"
+     },
+     "stat": {
+      "battersFaced": 588,
+      "strikeOuts": 129,
+      "hits": 117,
+      "gamesStarted": 25,
+      "inningsPitched": "134.8",
+      "numberOfPitches": 2182
+     }
+    },
+    {
+     "player": {
+      "id": 600119,
+      "fullName": "Kyle Freeland"
+     },
+     "stat": {
+      "battersFaced": 657,
+      "strikeOuts": 161,
+      "hits": 126,
+      "gamesStarted": 29,
+      "inningsPitched": "163.9",
+      "numberOfPitches": 2644
+     }
+    },
+    {
+     "player": {
+      "id": 600120,
+      "fullName": "Zac Gallen"
+     },
+     "stat": {
+      "battersFaced": 534,
+      "strikeOuts": 119,
+      "hits": 116,
+      "gamesStarted": 19,
+      "inningsPitched": "119.7",
+      "numberOfPitches": 1990
+     }
+    }
+   ]
+  }
+ ]
+}

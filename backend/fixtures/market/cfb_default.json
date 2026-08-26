@@ -1,0 +1,116 @@
+{
+ "events": [
+  {
+   "id": "300",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "Georgia"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "Alabama"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 55.0,
+       "spread": -6.0,
+       "details": "Georgia -6.0"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "301",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "Ohio State"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "Michigan"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 55.0,
+       "spread": -10.5,
+       "details": "Ohio State -10.5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "302",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "Texas"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "Oklahoma"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 63.5,
+       "spread": -6.5,
+       "details": "Texas -6.5"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "303",
+   "competitions": [
+    {
+     "competitors": [
+      {
+       "homeAway": "home",
+       "team": {
+        "abbreviation": "Oregon"
+       }
+      },
+      {
+       "homeAway": "away",
+       "team": {
+        "abbreviation": "Washington"
+       }
+      }
+     ],
+     "odds": [
+      {
+       "overUnder": 47.0,
+       "spread": -2.0,
+       "details": "Oregon -2.0"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
