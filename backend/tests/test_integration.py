@@ -171,7 +171,7 @@ class TestSettings:
 
 
 class TestTrackRecord:
-    def test_recording_a_slate_is_what_publishes_it_for_grading(self, client):
+    def test_recording_a_slate_is_what_publishes_it_for_grading(self, client, clean_db):
         """Reading a board is not publishing it -- recording is an explicit act."""
         before = client.get("/api/track-record").json()["total_picks"]
         client.get("/api/board/MLB")
@@ -180,7 +180,7 @@ class TestTrackRecord:
         client.post("/api/board/MLB/snapshot")
         assert client.get("/api/track-record").json()["total_picks"] > before
 
-    def test_grading_settles_picks_and_scores_them(self, client):
+    def test_grading_settles_picks_and_scores_them(self, client, clean_db):
         from app.db import session_scope
 
         client.post("/api/board/MLB/snapshot")

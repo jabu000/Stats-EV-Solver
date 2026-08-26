@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -12,6 +13,7 @@ from fastapi.responses import FileResponse, PlainTextResponse, Response
 from app.api import boards, entries, settings as settings_api, track_record
 from app.config import REPO_ROOT, get_settings
 from app.db import init_db
+from app.security import BasicAuthMiddleware
 
 FRONTEND_DIST = REPO_ROOT / "frontend" / "dist"
 
@@ -25,7 +27,22 @@ init_db()
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     init_db()
-    yield
+
+    task: asyncio.Task | None = None
+    if get_settings().enable_scheduler:
+        from app.scheduler import run_scheduler
+
+        task = asyncio.create_task(run_scheduler())
+
+    try:
+        yield
+    finally:
+        if task is not None:
+            task.cancel()
+            try:
+                await task
+            except asyncio.CancelledError:
+                pass
 
 
 app = FastAPI(
@@ -38,14 +55,22 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# The dev frontend runs on its own Vite port; in production it is served from here.
+_settings = get_settings()
+
+# The dev frontend runs on its own Vite port; in production it is served from here, so
+# same-origin requests need no CORS at all. CORS_ORIGINS covers the split-host case.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=_settings.allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Middleware is applied bottom-up, so adding the gate after CORS means it runs first --
+# an unauthenticated request is rejected before anything else looks at it.
+if _settings.access_password:
+    app.add_middleware(BasicAuthMiddleware, password=_settings.access_password)
 
 app.include_router(boards.router)
 app.include_router(entries.router)

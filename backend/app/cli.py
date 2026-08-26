@@ -45,6 +45,20 @@ def log(message: str, *, stream: str = "jobs") -> None:
         handle.write(line + "\n")
 
 
+def _redact(url: str) -> str:
+    """Strip credentials from a database URL before it is printed or logged.
+
+    `status` output ends up in job logs and in screenshots of support requests; a
+    managed Postgres URL carries its password inline.
+    """
+    if "@" not in url or "://" not in url:
+        return url
+    scheme, rest = url.split("://", 1)
+    creds, host = rest.rsplit("@", 1)
+    user = creds.split(":", 1)[0]
+    return f"{scheme}://{user}:***@{host}"
+
+
 def _leagues(value: str | None) -> list[League]:
     if not value or value.upper() == "ALL":
         return list(League)
@@ -89,29 +103,49 @@ def cmd_snapshot(args: argparse.Namespace) -> int:
 
 
 def cmd_grade(args: argparse.Namespace) -> int:
-    """Settle yesterday's picks against real results."""
-    from app.grading.grader import auto_grade
+    """Settle outstanding picks against real results.
+
+    With no `--date`, every date that still has ungraded picks is attempted, not just
+    yesterday. A scheduled run that fails -- the service was down, a feed was late, a
+    Monday-night game finished after the job ran -- would otherwise leave those picks
+    pending forever, and the track record would quietly become a biased sample of the
+    days the job happened to work.
+    """
+    from app.grading.grader import GRADE_LOOKBACK_DAYS, auto_grade, pending_dates
 
     init_db()
-    on = _parse_date(args.date, date.today() - timedelta(days=1))
-    failures = 0
+    leagues = _leagues(args.league)
 
-    for league in _leagues(args.league):
-        try:
-            with session_scope() as session:
-                report = auto_grade(
-                    session, league, on,
-                    season=args.season, week=args.week,
+    if args.date:
+        dates = [_parse_date(args.date, date.today() - timedelta(days=1))]
+    else:
+        with session_scope() as session:
+            dates = pending_dates(session, leagues, max_days=GRADE_LOOKBACK_DAYS)
+        if not dates:
+            log("grade: nothing is waiting on results")
+            return 0
+
+    failures = 0
+    for on in dates:
+        for league in leagues:
+            try:
+                with session_scope() as session:
+                    report = auto_grade(
+                        session, league, on,
+                        season=args.season, week=args.week,
+                    )
+                if report["pending_before"] == 0 and not args.date:
+                    continue  # another league's date; not this one's problem
+                log(
+                    f"grade {league.value} {on}: "
+                    f"{report['graded']}/{report['pending_before']} settled, "
+                    f"{report['still_pending']} still pending"
                 )
-            log(
-                f"grade {league.value} {on}: {report['graded']}/{report['pending_before']} "
-                f"settled, {report['still_pending']} still pending"
-            )
-            for problem in report["problems"]:
-                log(f"  ! {league.value}: {problem}")
-        except Exception as exc:
-            failures += 1
-            log(f"grade {league.value} FAILED: {exc}")
+                for problem in report["problems"]:
+                    log(f"  ! {league.value}: {problem}")
+            except Exception as exc:
+                failures += 1
+                log(f"grade {league.value} {on} FAILED: {exc}")
     return 1 if failures else 0
 
 
@@ -130,7 +164,7 @@ def cmd_status(args: argparse.Namespace) -> int:
 
     payload = {
         "data_mode": settings.data_mode.value,
-        "database": settings.database_url,
+        "database": _redact(settings.sqlalchemy_url),
         "pending_picks": pending,
         "graded_picks": record.graded_picks,
         "hit_rate": record.hit_rate,
@@ -143,10 +177,17 @@ def cmd_status(args: argparse.Namespace) -> int:
 
 
 def cmd_serve(args: argparse.Namespace) -> int:
+    import os
     import uvicorn
 
+    # A PaaS assigns the port and expects the process to bind every interface. Defaults
+    # stay loopback-only so running this on a laptop does not quietly expose the board
+    # to the coffee shop's wifi.
+    host = args.host or os.environ.get("HOST", "127.0.0.1")
+    port = args.port or int(os.environ.get("PORT", "8000"))
+
     uvicorn.run(
-        "app.main:app", host=args.host, port=args.port, reload=args.reload, log_level="info"
+        "app.main:app", host=host, port=port, reload=args.reload, log_level="info"
     )
     return 0
 
@@ -176,7 +217,9 @@ def main(argv: list[str] | None = None) -> int:
 
     grade = sub.add_parser("grade", help="settle picks against real results")
     grade.add_argument("--league", help="MLB, NFL, CFB, or ALL (default)")
-    grade.add_argument("--date", help="date to grade (default: yesterday)")
+    grade.add_argument(
+        "--date", help="date to grade (default: every date with pending picks)"
+    )
     grade.add_argument("--season", type=int, help="football season")
     grade.add_argument("--week", type=int, help="football week (default: inferred from the date)")
     grade.set_defaults(func=cmd_grade)
@@ -188,8 +231,8 @@ def main(argv: list[str] | None = None) -> int:
     check.set_defaults(func=cmd_check)
 
     serve = sub.add_parser("serve", help="run the API")
-    serve.add_argument("--host", default="127.0.0.1")
-    serve.add_argument("--port", type=int, default=8000)
+    serve.add_argument("--host", help="default: $HOST, else 127.0.0.1")
+    serve.add_argument("--port", type=int, help="default: $PORT, else 8000")
     serve.add_argument("--reload", action="store_true")
     serve.set_defaults(func=cmd_serve)
 

@@ -97,8 +97,15 @@ def auto_grade(
     }
 
 
+#: How far back an unattended grading run looks for unsettled picks. Shared by the API
+#: and the CLI so a scheduled run and a "Grade now" click cover the same ground.
+GRADE_LOOKBACK_DAYS = 14
+
+
 def pending_dates(
-    session: Session, leagues: list[League] | None = None, max_days: int = 14
+    session: Session,
+    leagues: list[League] | None = None,
+    max_days: int = GRADE_LOOKBACK_DAYS,
 ) -> list[date]:
     """Event dates that still have ungraded picks, newest first.
 

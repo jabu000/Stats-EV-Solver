@@ -92,6 +92,20 @@ The scripts are plain files in `ops/` — `install-service.sh` writes the unit a
 `run-jobs.sh` is what actually runs, so you can read them before trusting them, or call
 `./ops/run-jobs.sh both` by hand.
 
+### Or somewhere that isn't your laptop
+
+A laptop that's closed records no slates, and a slate that isn't recorded is never
+graded. `Dockerfile` and `render.yaml` deploy the whole thing — web service, Postgres,
+and the two scheduled jobs — to Render. **[DEPLOY.md](DEPLOY.md)** is the step-by-step,
+including what it costs and what breaks if you go cheap.
+
+Two things that only matter once it has a public URL, and both are off by default:
+
+- `ACCESS_PASSWORD` puts HTTP Basic in front of everything but the health check. Set it.
+  Without it, anyone with the link reads your betting history and can write to Settings.
+- `DATABASE_URL` accepts a managed `postgres://…` URL verbatim. The track record is the
+  one thing here that can't be regenerated, so it should not live on an ephemeral disk.
+
 ---
 
 ## The one number that matters
@@ -308,8 +322,12 @@ backend/app/
   pricing/     edge.py, entry.py, correlation.py
   grading/     grader.py (settlement, track record), results.py (actual results)
   cli.py       snapshot / grade / status / check / serve, for the scheduler
+  scheduler.py in-process job schedule, for deployments with no cron service
+  security.py  optional password gate
 frontend/src/  App.tsx (5-tab shell), components/, pages/
 ops/           install-service.sh (launchd/systemd), run-jobs.sh
+Dockerfile     node builds the frontend, python serves it
+render.yaml    web service + Postgres + the two cron jobs
 ```
 
 Nothing in `models/` imports a provider and nothing in `providers/` imports a model, so
@@ -324,7 +342,7 @@ board — with lower confidence, visible warnings, and the unresolved names surf
 ## Testing
 
 ```bash
-make test     # 195 tests
+make test     # 224 tests
 ```
 
 Coverage worth knowing about: the Poisson-binomial is checked against brute-force
@@ -342,6 +360,13 @@ prices identically in a fresh process (a per-process Monte-Carlo seed used to fl
 coin-flip bets and duplicate them); that anytime-TD grading counts rushing and receiving
 scores; that football week inference is reported rather than silent; and that demo seed
 data stays out of both the calibrator and the headline numbers.
+
+The deployment surface is tested too, since its failure modes only appear once it is
+public: that a managed `postgres://` URL is rewritten into something SQLAlchemy 2 will
+open, that the database password never reaches a log line, that the password gate
+refuses malformed credentials without crashing while leaving the health check open, and
+that the in-process schedule fires each hour exactly once and records before it grades.
+The suite itself passes against both SQLite and a real Postgres.
 
 ---
 
@@ -379,7 +404,12 @@ Read this part.
    date — an international game, a rescheduled game, a Week 18 Saturday — can be looked
    up against the wrong week and come back ungraded. The response names the week it
    used, and an explicit `week` overrides it.
-9. **The model may systematically favour "lower".** Yardage markets are right-skewed, so
+9. **The Render deployment is written but not built.** The sandbox blocks Docker Hub, so
+   the image was never assembled. Everything the image packages was verified directly —
+   the whole suite passes against a real Postgres, the password gate and the `$PORT`
+   binding were exercised against a running server — but the `docker build` itself has
+   not run. See [DEPLOY.md](DEPLOY.md).
+10. **The model may systematically favour "lower".** Yardage markets are right-skewed, so
    if a book sets its line at the median rather than the mean, this model will lean under
    more than it should. The track record is how you find out — watch hit rate against
    expected hit rate per market before trusting it with money.

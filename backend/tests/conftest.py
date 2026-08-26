@@ -19,6 +19,24 @@ from app.features.context import (  # noqa: E402
 
 @pytest.fixture(scope="session", autouse=True)
 def _schema():
+    """Start every run from an empty schema.
+
+    Without the drop, a run inherits whatever the last `make snapshot` left behind --
+    which is invisible on a fresh checkout and fatal against a database that persists,
+    since tests asserting on absolute row counts then depend on the developer having
+    deleted the file first.
+    """
+    Base.metadata.drop_all(engine)
+    Base.metadata.create_all(engine)
+
+
+@pytest.fixture
+def clean_db():
+    """An empty database for one test. For anything asserting on absolute counts."""
+    Base.metadata.drop_all(engine)
+    Base.metadata.create_all(engine)
+    yield
+    Base.metadata.drop_all(engine)
     Base.metadata.create_all(engine)
 
 

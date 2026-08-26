@@ -1,0 +1,86 @@
+# Render Blueprint. In the Render dashboard: New -> Blueprint -> pick this repo.
+#
+# Creates three things: the web service, a Postgres database, and two cron jobs that
+# record slates and grade them. Everything except the secrets is declared here, so a
+# redeploy from scratch reproduces the same setup.
+#
+# Read DEPLOY.md before pressing anything -- it covers what each plan costs and what
+# breaks on the free tier.
+
+databases:
+  # The track record has to survive deploys. Render's filesystem does not, so SQLite
+  # would silently reset every time you push. This is the whole reason for Postgres.
+  - name: stats-ev-solver-db
+    databaseName: solver
+    user: solver
+    plan: basic-256mb        # `free` works too, but Render expires free databases.
+
+services:
+  - type: web
+    name: stats-ev-solver
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter            # `free` sleeps after 15 minutes; see DEPLOY.md.
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: stats-ev-solver-db
+          property: connectionString
+      - key: DATA_MODE
+        value: live
+      # Set in the dashboard, not here. `sync: false` means Render prompts for it on
+      # first deploy and never stores it in the repo.
+      - key: ACCESS_PASSWORD
+        sync: false
+      - key: CFBD_API_KEY
+        sync: false
+      - key: UNDERDOG_TOKEN
+        sync: false
+      # The cron jobs below do the scheduling. Flip this to true instead if you are on
+      # a plan without cron jobs -- see DEPLOY.md.
+      - key: ENABLE_SCHEDULER
+        value: "false"
+
+  # Record each league's slate through the day. Three runs, so the earlier board (the
+  # one with an edge) is kept and the closing line has something to be measured against.
+  - type: cron
+    name: stats-ev-solver-snapshot
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    schedule: "0 16,20,23 * * *"        # UTC: 12pm, 4pm, 7pm US Eastern
+    dockerCommand: python -m app.cli snapshot
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: stats-ev-solver-db
+          property: connectionString
+      - key: DATA_MODE
+        value: live
+      - key: CFBD_API_KEY
+        sync: false
+      - key: UNDERDOG_TOKEN
+        sync: false
+
+  # Settle whatever finished. Runs late enough that west-coast games are final, and
+  # grades every outstanding date rather than just yesterday, so a missed run catches up.
+  - type: cron
+    name: stats-ev-solver-grade
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    schedule: "0 11 * * *"              # UTC: 7am US Eastern
+    dockerCommand: python -m app.cli grade
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: stats-ev-solver-db
+          property: connectionString
+      - key: DATA_MODE
+        value: live
+      - key: CFBD_API_KEY
+        sync: false
+      - key: UNDERDOG_TOKEN
+        sync: false

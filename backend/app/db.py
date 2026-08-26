@@ -17,20 +17,22 @@ class Base(DeclarativeBase):
 
 
 _settings = get_settings()
+_url = _settings.sqlalchemy_url
+_is_sqlite = _url.startswith("sqlite")
 
 # SQLite lives on disk next to the repo; make sure the directory exists before the
 # engine tries to open it.
-if _settings.database_url.startswith("sqlite:///"):
-    Path(_settings.database_url.removeprefix("sqlite:///")).parent.mkdir(
-        parents=True, exist_ok=True
-    )
+if _url.startswith("sqlite:///"):
+    Path(_url.removeprefix("sqlite:///")).parent.mkdir(parents=True, exist_ok=True)
 
 engine = create_engine(
-    _settings.database_url,
+    _url,
     future=True,
-    connect_args={"check_same_thread": False}
-    if _settings.database_url.startswith("sqlite")
-    else {},
+    # Managed Postgres closes idle connections without telling the client, so the
+    # first query after a quiet spell fails on a dead socket unless it is checked.
+    pool_pre_ping=not _is_sqlite,
+    pool_recycle=280 if not _is_sqlite else -1,
+    connect_args={"check_same_thread": False} if _is_sqlite else {},
 )
 
 SessionLocal = sessionmaker(bind=engine, autoflush=False, expire_on_commit=False)

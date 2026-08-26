@@ -13,7 +13,7 @@ import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import func
 
-from app.db import Base, engine, session_scope
+from app.db import session_scope
 from app.domain import League, Market
 from app.grading.results import (
     CfbResultsProvider, ResultFetch, _football_results_from_rows, estimate_week,
@@ -24,14 +24,10 @@ from app.tables import ProjectionRow, Snapshot
 
 
 @pytest.fixture
-def client():
+def client(clean_db):
     """A clean database per test -- these assert on absolute row counts."""
-    Base.metadata.drop_all(engine)
-    Base.metadata.create_all(engine)
     with TestClient(app) as test_client:
         yield test_client
-    Base.metadata.drop_all(engine)
-    Base.metadata.create_all(engine)
 
 
 def _rows() -> int:

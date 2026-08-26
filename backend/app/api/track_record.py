@@ -11,12 +11,13 @@ from sqlalchemy.orm import Session
 from app.api.deps import get_session
 from app.domain import League, Market
 from app.grading.grader import (
-    auto_grade, build_track_record, grade_from_results, pending_dates, pending_picks,
+    GRADE_LOOKBACK_DAYS,
+    auto_grade,
+    build_track_record,
+    grade_from_results,
+    pending_dates,
+    pending_picks,
 )
-
-#: How far back "grade everything outstanding" reaches. Beyond this a result feed has
-#: usually rolled off anyway, and a pick that old is not worth re-querying every run.
-GRADE_LOOKBACK_DAYS = 14
 from app.schemas import TrackRecordResponse
 
 router = APIRouter(prefix="/api/track-record", tags=["track record"])
